@@ -13,7 +13,7 @@ $transition: all 0.3s linear
 //fonts
 $mainFont: 'PT Sans', sans-serif
 
-$shadow: 0 0 15px 0 rgba(121,121,121,0.5)
+$shadow: 0 -8px 15px 0 rgba(121,121,121,0.5)
 
 /*-----------------------------------*/
 /*              General              */
@@ -29,8 +29,11 @@ body
 	overflow-x: hidden
 	background: #fff url(../img/body_bg.png) 0 0 repeat
 
-main
+.wrapper-shadow
 	box-shadow: $shadow
+	width: 1200px
+	margin: auto
+	background-color: #fff
 
 /*-----------------------------------*/
 /*            Typography             */
@@ -55,7 +58,7 @@ h3
 h4
 	font-size: 24px
 h5
-	font-size: 14px
+	font-size: 16px
 h6
 	font-size: 14px
 
@@ -109,6 +112,20 @@ a, a:hover
 	&:active,
 	&:focus
 		background-color: #fff
+
+/*-----------------------------------*/
+/*       Модальное окно             */
+/*-----------------------------------*/
+.mfp-hide
+	display: none!important
+.white-popup-block
+	background: #FFF
+	padding: 20px 30px
+	text-align: left
+	max-width: 650px
+	margin: 40px auto
+	position: relative
+
 
 
 /*-----------------------------------*/

@@ -14,8 +14,11 @@ body {
   background: #fff url(../img/body_bg.png) 0 0 repeat;
 }
 
-main {
-  box-shadow: 0 0 15px 0 rgba(121, 121, 121, 0.5);
+.wrapper-shadow {
+  box-shadow: 0 -8px 15px 0 rgba(121, 121, 121, 0.5);
+  width: 1200px;
+  margin: auto;
+  background-color: #fff;
 }
 
 /*-----------------------------------*/
@@ -50,7 +53,7 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h6 {
@@ -118,6 +121,22 @@ a, a:hover {
 .btn-color:active,
 .btn-color:focus {
   background-color: #fff;
+}
+
+/*-----------------------------------*/
+/*       Модальное окно             */
+/*-----------------------------------*/
+.mfp-hide {
+  display: none !important;
+}
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
 }
 
 /*-----------------------------------*/

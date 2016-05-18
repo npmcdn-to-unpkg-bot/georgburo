@@ -9,7 +9,8 @@
 	<meta charset="utf-8">
 
 	<title>Заказать картину по фотографии | Картины на заказ по фото – цены | Портретное бюро Георгия Дьяконова (Санкт­Петербург)</title>
-	<meta name="description" content="Портретное бюро Григория Дьяконова ­ создаем картины по вашим фотографиям, напишем портрет маслом, карандашом, пастелью. Напишем картину по вашему сюжету. Ручная работа от натяжки холста до покрытия картины лаком.">
+	<!-- <title><?php //bloginfo('name'); ?> <?php //wp_title( '|', true, 'left' ); ?></title> -->
+	<meta name="description" content="Портретное бюро Георгия Дьяконова ­ создаем картины по вашим фотографиям, напишем портрет маслом, карандашом, пастелью. Напишем картину по вашему сюжету. Ручная работа от натяжки холста до покрытия картины лаком.">
 	<meta name="keywords" content="заказать картину по фотографии фото спб санкт­петербург цены портретное бюро">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -28,10 +29,273 @@
 </head>
 
 <body>
+	<div class="wrapper-shadow">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="logo-column">
+						<div class="logo-column--img">
+							<a href="/"><img src="img/logo.png" alt="<?php bloginfo('name'); ?>"></a>
+						</div>
+						<div class="logo-column--title">
+							<a href="/">
+								<span class="logo-column--title-small">Портретное бюро</span>
+								<span class="logo-column--title--big">Георгия Дьяконова</span>
+							<a>
+						</div>
+					</div>
+					<nav class="menu-column">
+						<ul>
+							<li><a href="#">Портреты</a></li>
+							<li><a href="#">Картины на заказ</a></li>
+							<li><a href="#">Портфолио</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">О бюро</a></li>
+						</ul>
+					</nav>
+					<div class="phone-column">
+						<p class="phone-column--number">
+							<a href="tel:+78122401727">+7 812 240-17-27</a>
+						</p>
 
-<title><?php bloginfo('name'); ?> <?php wp_title( '|', true, 'left' ); ?></title>
+						<a class="callme-form" href="#callme-form">Заказать картину</a>
+						<form id="callme-form" class="mfp-hide white-popup-block">
+							<p class="callme-form--title">УЗНАТЬ ПОДРОБНОСТИ</p>
+							<p class="callme-form--desc">Заполните форму, и мы обязательно свяжемся с вами!</p>
 
-	<!-- Здесь пишем код -->
+							<label for="name">Введите имя (обязательно):</label>
+							<input id="name" name="name" type="text">
+
+							<label for="phone">Введите ваш телефон (обязательно):</label>
+							<input id="phone" name="phone" type="tel">
+
+							<input type="submit" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<div class="row about-block">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-4 about-block--text">
+								<h1><a href="#">Портрет по фотографии</a></h1>
+								<p>У нас Вы можете заказать эксклюзивные портреты по фотографии в классической и современной манере исполнения с высокой детальной проработкой, в технике холст, масло. А также недорогие, фотореалистичные портреты карандашом и пастелью.</p>
+								<a href="#" class="btn btn-light">Посмотреть примеры</a>
+							</div>
+							<div class="col-xs-8 about-block--photo">
+								<img src="img/portrait.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row about-block">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-8 about-block--photo">
+								<img src="img/picture.jpg" alt="">
+							</div>
+							<div class="col-xs-4 about-block--text">
+								<h2><a href="#">Картины на заказ</a></h2>
+								<p>Мы регулярно копируем картины русской классической школы, итальянского ренессанса и французского импрессионизма. Хотите заказать репродукцию известной картины, но еще не определились с выбором? Сообщите Ваши пожелания по стилю и сюжету, и мы сделаем для Вас индивидуальную подборку изображений из нашего обширного каталога. А если у вас есть своя особенная идея картины, то мы поможем ее реализовать.</p>
+								<a href="#" class="btn btn-light">Посмотреть примеры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="advantages">
+					<h2>Преимущества наших картин</h2>
+					<div class="row">
+						<div class="col-xs-5 advantages--list">
+							<div class="row">
+								<div class="col-xs-4 advantages--icon">
+									<img src="img/adv_icon_1.png" alt="">
+								</div>
+								<div class="col-xs-8">
+									<p><b>Полностью ручная работа.</b> От натяжки холста до покрытия завершенной картины лаком.</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-4 advantages--icon">
+									<img src="img/adv_icon_2.png" alt="">
+								</div>
+								<div class="col-xs-8">
+									<p><b>Высокопрофессиональная манера исполнения.</b> В жанрах реализм и академизм.</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-4 advantages--icon">
+									<img src="img/adv_icon_3.png" alt="">
+								</div>
+								<div class="col-xs-8">
+									<p><b>Классические технологии живописи.</b> Мы пишем картины по классическим технологиям, так же как это делали мастера прошлых эпох</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-7 advantages--photo">
+							<img src="img/adv_pic.jpg" alt="">
+						</div>
+					</div>
+				</section>
+
+				<div class="row about-block">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-7 about-block--photo">
+								<img src="img/master.jpg" alt="">
+							</div>
+							<div class="col-xs-5 about-block--text">
+								<h2><a href="#">Мастерская</a></h2>
+								<p>Наши картины — это полностью ручная работа от натяжки холста, до покрытия завершенной картины лаком.</p>
+								<a href="#" class="btn btn-light">Читать о Бюро</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="our-masters">
+					<h2>Наши мастера</h2>
+					<div class="row">
+						<div class="col-xs-4 our-masters--column">
+							<div class="our-masters--photo">
+								<img src="img/master_photo.jpg" alt="">
+							</div>
+							<h5>Георгий Дьяконов</h5>
+							<p>Мастер классического стиля. Его портреты порадуют вас точной передачей характера, а картины, прекрасной проработкой и вниманием к деталям.</p>
+						</div>
+
+						<div class="col-xs-4 our-masters--column">
+							<div class="our-masters--photo">
+								<img src="img/master_photo_2.jpg" alt="">
+							</div>
+							<h5>Евгения Шлявас</h5>
+							<p>Специализируется на портретах карандашом и пастелью. Напишет фотореалистичный портрет в максимально короткий срок, если идея подарка пришла в последний момент.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="activity-block">
+					<h2>14 лет творческой деятельности</h2>
+					<div class="row">
+						<div class="col-xs-4 activity-block--column">
+							<div class="row">
+								<div class="col-xs-3 activity-block--icon">
+									<img src="img/activity_icon_1.png" alt="">
+								</div>
+								<div class="col-xs-9 activity-block--info">
+									<h5>Художественное образование</h5>
+									<p>Воспитанники художественных академий — Барона Штиглица и Российской Академии художеств.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-4 activity-block--column">
+							<div class="row">
+								<div class="col-xs-3 activity-block--icon">
+									<img src="img/activity_icon_2.png" alt="">
+								</div>
+								<div class="col-xs-9 activity-block--info">
+									<h5>Участвовали в реставрации</h5>
+									<p>Экспонатов и интерьера Эрмитажа, Исаакиевского и Крондштадтского соборов и других памятников.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-4 activity-block--column">
+							<div class="row">
+								<div class="col-xs-3 activity-block--icon">
+									<img src="img/activity_icon_3.png" alt="">
+								</div>
+								<div class="col-xs-9 activity-block--info">
+									<h5>Работы находятся в частных коллекциях</h5>
+									<p>Уважаемых деятелей культуры, искусства и религии.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="advantages-work">
+					<h2>Преимущества работы с нами</h2>
+					<div class="row">
+						<div class="col-xs-3 advantages-work--column">
+							<div class="advantages-work--icon">
+								<img src="img/advantages_work_1.png" alt="">
+							</div>
+							<p>Бесплатная <a href="#">доставка</a> по всей России</p>
+						</div>
+						<div class="col-xs-3 advantages-work--column">
+							<div class="advantages-work--icon">
+								<img src="img/advantages_work_2.png" alt="">
+							</div>
+							<p>Возможность <a href="#">заказа онлайн</a></p>
+						</div>
+						<div class="col-xs-3 advantages-work--column">
+							<div class="advantages-work--icon">
+								<img src="img/advantages_work_3.png" alt="">
+							</div>
+							<p>Напишем <a href="#">любую картину</a> по вашему запросу</p>
+						</div>
+						<div class="col-xs-3 advantages-work--column">
+							<div class="advantages-work--icon">
+								<img src="img/advantages_work_4.png" alt="">
+							</div>
+							<p>Удобные <a href="#">варианты оплаты</a></p>
+						</div>
+					</div>
+				</section>
+
+				<div class="order">
+					<div class="row">
+						<div class="col-xs-4">
+							<a class="btn btn-light" href="#callme-form">Заказать картину</a>
+						</div>
+					</div>
+				</div>
+
+				<section class="seo-block">
+					<h3>Художественная мастерская Георгия Дьяконова</h3>
+					<div class="row">
+						<div class="col-xs-6">
+							<p>Создание&nbsp;портретов по фотографии&nbsp;– особый вид искусства. Художники портретного бюро Георгия Дьяконова передают изображения с предельной точностью, используют игру света и тени, чтобы оживить&nbsp;картину, разбудить эмоции, передать настроение. Под их руками полотна обретают внутренний свет, собственную душу.</p>
+							<p>Мы пишем взрослые и&nbsp;детские портреты по фотографиям. Вы сами выбираете стиль картины – сюжетное полотно, романтический портрет влюбленной пары или ретроспективное изображение. Часто заказывают&nbsp;портреты по фото в подарок. Выберите хороший&nbsp;снимок и закажите портрет на холсте по фотографии, чтобы выразить теплые чувства по отношению к близким людям.</p>
+							<p>Ценители шедевров мировой живописи заказывают у нас&nbsp;копии картин маслом. Мастера тщательно изучают оригиналы, выбирают холсты подходящей зернистости, точно имитируют манеру художника. Все картины создаются только на натуральном льняном холсте с применением качественных красок.</p>
+						</div>
+						<div class="col-xs-6">
+							<p>Если у вас есть собственное фото, которое вы хотите перенести на полотно,&nbsp;закажите картину по фотографии. На всех этапах работы художники готовят отчеты для заказчиков, вы сможете полностью контролировать процесс создания&nbsp;картины по фотографии&nbsp;и утвердите окончательный вариант.</p>
+							<p>Наше портретное бюро расположено в&nbsp;Санкт-Петербурге, но мы успешно работаем с заказчиками из всех регионов и принимаем оплату в любой форме – банковской картой, электронными и почтовыми переводами. Заказ можно оформить через сайт. Помните, что работа над картиной может занять несколько недель. Если это подарок, постарайтесь оформить заявку заранее и уточните сроки.</p>
+							<p>Художники нашей мастерской позаботятся, чтобы&nbsp;портрет по фото на заказ&nbsp;был готов и доставлен к нужной дате. Для пересылки картин в регионы мы изготавливаем индивидуальную упаковку. Это исключает повреждения, намокание или попадание пыли на полотно. Если у вас появились вопросы, мы готовы ответить.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<div class="row">
+				<div class="col-xs-7">
+					<p class="copyright">© 2016 Художественная мастерская Георгия Дьяконова</p>
+				</div>
+				<div class="col-xs-5">
+					<p class="phone-number">+7 812 240-17-27</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
 
 
 
@@ -43,6 +307,7 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/MagnificPopup/dist/jquery.magnific-popup.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

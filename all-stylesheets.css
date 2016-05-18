@@ -5,7 +5,7 @@
 @import url("libs/bootstrap/css/bootstrap-grid.min.css");
 
 /* modal */
-/*@import url("libs/Magnific-Popup-master/dist/magnific-popup.css");*/
+@import url("libs/MagnificPopup/dist/magnific-popup.css");
 
 /* owl-carousel */
 /*@import url("libs/owl.carousel/owl-carousel/owl.carousel.css");

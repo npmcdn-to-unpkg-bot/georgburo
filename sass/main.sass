@@ -1,0 +1,141 @@
+@import "bourbon/bourbon"
+
+// color_bg
+$mainBg:#fe9902
+
+// typography
+$fontSize: 16px
+$colorFont: #333333
+
+// transition
+$transition: all 0.3s linear
+
+//fonts
+$mainFont: 'PT Sans', sans-serif
+
+$shadow: 0 0 15px 0 rgba(121,121,121,0.5)
+
+/*-----------------------------------*/
+/*              General              */
+/*-----------------------------------*/
+body
+	font-family: $mainFont
+	font-weight: normal
+	font-size: $fontSize
+	min-width: 1200px
+	position: relative
+	line-height: 1.2em
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background: #fff url(../img/body_bg.png) 0 0 repeat
+
+main
+	box-shadow: $shadow
+
+/*-----------------------------------*/
+/*            Typography             */
+/*-----------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  line-height: 1.2em
+  word-wrap: break-word
+  font-family: $mainFont
+  font-weight: bold
+
+h1
+	font-size: 44px
+h2
+	font-size: 44px
+h3
+	font-size: 34px
+h4
+	font-size: 24px
+h5
+	font-size: 14px
+h6
+	font-size: 14px
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a
+	color: $mainBg
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover
+	color: $mainBg
+
+a, a:hover
+	text-decoration: none
+	color: $mainBg
+
+.img
+	width: 100%
+	height: auto
+	object-fit: cover
+
+.btn
+	text-align: center
+	display: inline-block
+	transition: $transition
+	font-weight: bold
+	margin: auto
+	color: #fff
+
+.btn-light
+	border: 2px solid #fff
+	padding: 15px 50px
+	font-size: 20px
+	&:hover,
+	&:active,
+	&:focus
+		border: 2px solid transparent
+		background-color: #fff
+
+.btn-color
+	font-size: 15px
+	padding: 7px 30px
+	&:hover,
+	&:active,
+	&:focus
+		background-color: #fff
+
+
+/*-----------------------------------*/
+/*            Хедер                  */
+/*-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*/
+/*               Футер               */
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/*              Главная              */
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/*            Typography             */
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/*            Typography             */
+/*-----------------------------------*/

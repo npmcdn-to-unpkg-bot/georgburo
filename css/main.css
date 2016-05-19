@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble-webfont.woff2") format("woff2"), url("../fonts/rouble-webfont.woff") format("woff"), url("../fonts/rouble-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*-----------------------------------*/
 /*              General              */
 /*-----------------------------------*/
@@ -589,8 +596,186 @@ section h6 {
 }
 
 /*-----------------------------------*/
-/*            Typography             */
+/*        Портрет по фото            */
 /*-----------------------------------*/
+span.rur {
+  font-family: 'als_rublregular';
+}
+
+.right {
+  float: right;
+}
+
+.icon:before {
+  content: '';
+  background: url(../img/icon-sprite.png) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services-block .services-block--text {
+  padding: 45px;
+  height: 410px;
+  overflow: hidden;
+}
+
+.services-block .services-block--text .services-block--cat {
+  color: #fe9902;
+  font-weight: bold;
+  margin: 0;
+}
+
+.services-block .services-block--text h1,
+.services-block .services-block--text h2,
+.services-block .services-block--text h3,
+.services-block .services-block--text h1 > a,
+.services-block .services-block--text h2 > a,
+.services-block .services-block--text h3 > a {
+  font-size: 44px;
+  color: #333333;
+  margin: 0 0 20px;
+}
+
+.services-block .services-block--text h1 > a,
+.services-block .services-block--text h2 > a,
+.services-block .services-block--text h3 > a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.services-block .services-block--text h1 > a:hover,
+.services-block .services-block--text h1 > a:active,
+.services-block .services-block--text h1 > a:focus,
+.services-block .services-block--text h2 > a:hover,
+.services-block .services-block--text h2 > a:active,
+.services-block .services-block--text h2 > a:focus,
+.services-block .services-block--text h3 > a:hover,
+.services-block .services-block--text h3 > a:active,
+.services-block .services-block--text h3 > a:focus {
+  border-bottom: none;
+}
+
+.services-block .services-block--text .services-block--list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.services-block .services-block--text .services-block--list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.services-block .services-block--text .services-block--list li:before {
+  width: 21px;
+  height: 21px;
+}
+
+.services-block .services-block--text .services-block--list li.services-block--icon-time:before {
+  background-position: 0 0;
+}
+
+.services-block .services-block--text .services-block--list li.services-block--icon-pencil:before {
+  background-position: -38px -2px;
+}
+
+.services-block .services-block--text .services-block--list li.services-block--icon-oil:before {
+  background-position: -74px -1px;
+}
+
+.services-block--photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  height: 410px;
+}
+
+.services-block--photo:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.services-block--photo:hover:before {
+  opacity: 0.7;
+}
+
+.services-block--photo:hover .btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 330px;
+  height: 60px;
+  z-index: 1000;
+  padding: 0;
+  line-height: 48px;
+}
+
+.services-block--photo:hover .btn:hover,
+.services-block--photo:hover .btn:active,
+.services-block--photo:hover .btn:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.services-block--photo .btn {
+  display: none;
+}
+
+.about-portret {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.about-portret h1,
+.about-portret h2,
+.about-portret h3 {
+  margin-bottom: 25px;
+}
+
+.about-portret .about-portret--column {
+  text-align: center;
+}
+
+.about-portret .about-portret--column .about-portret--icon {
+  height: 76px;
+  margin: auto;
+}
+
+.about-portret .about-portret--column .about-portret--info h4,
+.about-portret .about-portret--column .about-portret--info h5,
+.about-portret .about-portret--column .about-portret--info h6 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.about-portret .about-portret--column .about-portret--info p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.how-work {
+  text-align: center;
+  padding-bottom: 118px;
+}
+
+.how-work h2 {
+  margin-bottom: 65px;
+}
+
 /*-----------------------------------*/
 /*            Typography             */
 /*-----------------------------------*/

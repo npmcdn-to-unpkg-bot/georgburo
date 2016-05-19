@@ -34,15 +34,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="logo-column">
-						<div class="logo-column--img">
-							<a href="/"><img src="img/logo.png" alt="<?php bloginfo('name'); ?>"></a>
-						</div>
-						<div class="logo-column--title">
-							<a href="/">
-								<span class="logo-column--title-small">Портретное бюро</span>
-								<span class="logo-column--title--big">Георгия Дьяконова</span>
-							<a>
-						</div>
+						<a href="/">
+							<img src="img/logo_full.png" class="logo-full" alt="<?php bloginfo('name'); ?>">
+							<img src="img/logo.png" class="logo-sticky" alt="<?php bloginfo('name'); ?>">
+						</a>
 					</div>
 					<nav class="menu-column">
 						<ul>
@@ -59,7 +54,7 @@
 							<a href="tel:+78122401727">+7 812 240-17-27</a>
 						</p>
 
-						<a class="callme-form" href="#callme-form">Заказать картину</a>
+						<a class="btn btn-color callme-form" href="#callme-form">Заказать картину</a>
 						<form id="callme-form" class="mfp-hide white-popup-block">
 							<p class="callme-form--title">УЗНАТЬ ПОДРОБНОСТИ</p>
 							<p class="callme-form--desc">Заполните форму, и мы обязательно свяжемся с вами!</p>
@@ -70,7 +65,7 @@
 							<label for="phone">Введите ваш телефон (обязательно):</label>
 							<input id="phone" name="phone" type="tel">
 
-							<input type="submit" value="Отправить">
+							<input class="btn btn-color" type="submit" value="Отправить">
 						</form>
 					</div>
 				</div>
@@ -257,7 +252,7 @@
 				<div class="order">
 					<div class="row">
 						<div class="col-xs-4">
-							<a class="btn btn-light" href="#callme-form">Заказать картину</a>
+							<a class="callme-form btn btn-light" href="#callme-form">Заказать картину</a>
 						</div>
 					</div>
 				</div>
@@ -281,12 +276,19 @@
 		</main>
 
 		<footer>
-			<div class="row">
-				<div class="col-xs-7">
-					<p class="copyright">© 2016 Художественная мастерская Георгия Дьяконова</p>
-				</div>
-				<div class="col-xs-5">
-					<p class="phone-number">+7 812 240-17-27</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="divider"></div>
+						<div class="row">
+							<div class="col-xs-7">
+								<p class="copyright">© 2016 Художественная мастерская Георгия Дьяконова</p>
+							</div>
+							<div class="col-xs-5">
+								<p class="phone-number">+7 812 240-17-27</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>

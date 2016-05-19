@@ -101,7 +101,7 @@ a, a:hover {
 }
 
 .btn-light {
-  border: 2px solid #fff;
+  border: 4px solid #fff;
   padding: 15px 50px;
   font-size: 20px;
 }
@@ -109,7 +109,7 @@ a, a:hover {
 .btn-light:hover,
 .btn-light:active,
 .btn-light:focus {
-  border: 2px solid transparent;
+  border: 4px solid transparent;
   background-color: #fff;
   outline: none;
   text-decoration: none;
@@ -129,6 +129,11 @@ a, a:hover {
   color: #fff;
   outline: none;
   text-decoration: none;
+}
+
+.main-bg {
+  background-color: #fe9902;
+  color: #fff;
 }
 
 /*-----------------------------------*/
@@ -209,6 +214,7 @@ header {
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease;
   background: #FFF;
+  z-index: 1000;
 }
 
 header.sticky {
@@ -335,13 +341,18 @@ footer {
   padding-bottom: 120px;
 }
 
-footer .divider {
+footer .footer-column {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+footer .footer-column .divider {
   width: 100%;
   height: 5px;
   background-color: #fe9902;
 }
 
-footer .phone-number {
+footer .footer-column .phone-number {
   font-weight: bold;
   text-align: right;
 }
@@ -349,6 +360,234 @@ footer .phone-number {
 /*-----------------------------------*/
 /*              Главная              */
 /*-----------------------------------*/
+section {
+  padding: 60px 30px;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.about-block {
+  max-height: 535px;
+  overflow: hidden;
+}
+
+.about-block .about-block--text {
+  background-color: #fe9902;
+  padding: 50px;
+  color: #fff;
+  min-height: 535px;
+}
+
+.about-block .about-block--text h1,
+.about-block .about-block--text h2,
+.about-block .about-block--text h3,
+.about-block .about-block--text h1 > a,
+.about-block .about-block--text h2 > a,
+.about-block .about-block--text h3 > a {
+  font-size: 44px;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.about-block .about-block--text h1 > a,
+.about-block .about-block--text h2 > a,
+.about-block .about-block--text h3 > a {
+  border-bottom: 1px solid #ffd69a;
+}
+
+.about-block .about-block--text h1 > a:hover,
+.about-block .about-block--text h1 > a:active,
+.about-block .about-block--text h2 > a:hover,
+.about-block .about-block--text h2 > a:active,
+.about-block .about-block--text h3 > a:hover,
+.about-block .about-block--text h3 > a:active {
+  border-bottom: none;
+}
+
+.about-block .about-block--text .btn {
+  margin-top: 20px;
+}
+
+.about-block .about-block--photo {
+  overflow: hidden;
+  height: 535px;
+  padding: 0;
+}
+
+.about-block .about-block--photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.advantages {
+  padding: 80px 85px 90px 90px;
+}
+
+.advantages .advantages--row {
+  margin: 30px 0 90px;
+}
+
+.advantages .advantages--row p {
+  font-size: 14px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.advantages .advantages--row .advantages--icon {
+  text-align: center;
+}
+
+.advantages .advantages--row .advantages--icon img {
+  max-height: 76px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.advantages .advantages--photo img {
+  width: 100%;
+  height: auto;
+}
+
+.our-masters .our-masters--column {
+  text-align: center;
+}
+
+.our-masters .our-masters--column .our-masters--photo {
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.our-masters .our-masters--column .our-masters--photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.our-masters .our-masters--column h5, .our-masters .our-masters--column h6, .our-masters .our-masters--column h4, .our-masters .our-masters--column h3, .our-masters .our-masters--column h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.our-masters .our-masters--column p {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 0 25px;
+}
+
+.activity-block {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.activity-block .activity-block--column h5, .activity-block .activity-block--column h6, .activity-block .activity-block--column h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.activity-block .activity-block--column p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.activity-block .activity-block--column .activity-block--icon {
+  width: 20%;
+}
+
+.activity-block .activity-block--column .activity-block--icon img {
+  max-height: 40px;
+}
+
+.advantages-work {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 90px;
+}
+
+.advantages-work .advantages-work--column {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.advantages-work .advantages-work--column .advantages-work--icon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.advantages-work .advantages-work--column .advantages-work--icon img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.advantages-work .advantages-work--column p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.advantages-work .advantages-work--column p a {
+  color: #000;
+  border-bottom: 1px solid #333333;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+
+.advantages-work .advantages-work--column p a:hover,
+.advantages-work .advantages-work--column p a:active {
+  color: #fe9902;
+  border-bottom: 1px solid #fe9902;
+}
+
+.order {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.order .btn {
+  padding: 15px 75px;
+}
+
+.seo-block {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 95px;
+}
+
+.seo-block h3,
+.seo-block h2,
+.seo-block h4,
+.seo-block h5,
+.seo-block h1,
+.seo-block h6 {
+  margin-bottom: 13px;
+}
+
+.seo-block p {
+  margin-bottom: 25px;
+}
+
 /*-----------------------------------*/
 /*            Typography             */
 /*-----------------------------------*/

@@ -97,13 +97,13 @@ a, a:hover
 	color: #fff
 
 .btn-light
-	border: 2px solid #fff
+	border: 4px solid #fff
 	padding: 15px 50px
 	font-size: 20px
 	&:hover,
 	&:active,
 	&:focus
-		border: 2px solid transparent
+		border: 4px solid transparent
 		background-color: #fff
 		outline: none
 		text-decoration: none
@@ -120,6 +120,10 @@ a, a:hover
 		color: #fff
 		outline: none
 		text-decoration: none
+
+.main-bg
+	background-color: $mainBg
+	color: #fff
 
 /*-----------------------------------*/
 /*       Модальное окно             */
@@ -183,6 +187,7 @@ header
 	padding: 20px 0
 	transition: all 0.4s ease
 	background: #FFF
+	z-index: 1000
 	&.sticky
 		padding: 10px 0
 		z-index: 1000
@@ -264,18 +269,182 @@ header
 /*-----------------------------------*/
 footer
 	padding-bottom: 120px
-	.divider
-		width: 100%
-		height: 5px
-		background-color: $mainBg
-	.phone-number
-		font-weight: bold
-		text-align: right
+	.footer-column
+		padding-left: 45px
+		padding-right: 45px
+		.divider
+			width: 100%
+			height: 5px
+			background-color: $mainBg
+		.phone-number
+			font-weight: bold
+			text-align: right
 
 
 /*-----------------------------------*/
 /*              Главная              */
 /*-----------------------------------*/
+section
+	padding: 60px 30px
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		text-align: center
+		margin-top: 0
+.about-block
+	max-height: 535px
+	overflow: hidden
+	.about-block--text
+		background-color: $mainBg
+		padding: 50px
+		color: #fff
+		min-height: 535px
+		h1,
+		h2,
+		h3,
+		h1>a,
+		h2>a,
+		h3>a
+			font-size: 44px
+			line-height: 1.2
+			color: #fff
+			margin-top: 0
+			margin-bottom: 36px
+		h1>a,
+		h2>a,
+		h3>a
+			border-bottom: 1px solid #ffd69a
+			&:hover,
+			&:active
+				border-bottom: none
+		.btn
+			margin-top: 20px
+	.about-block--photo
+		overflow: hidden
+		height: 535px
+		padding: 0
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+
+.advantages
+	padding: 80px 85px 90px 90px
+	.advantages--row
+		margin: 30px 0 90px
+		p
+			font-size: 14px
+			margin: 0
+			display: inline-block
+			vertical-align: middle
+		.advantages--icon
+			text-align: center
+			img
+				max-height: 76px
+				display: inline-block
+				vertical-align: middle
+	.advantages--photo
+		img
+			width: 100%
+			height: auto
+
+.our-masters
+	.our-masters--column
+		text-align: center
+		.our-masters--photo
+			width: 230px
+			height: 230px
+			overflow: hidden
+			border-radius: 50%
+			margin: auto
+			margin-bottom: 20px
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		h5, h6, h4, h3, h2
+			font-size: 16px
+			margin-bottom: 5px
+		p
+			font-size: 14px
+			margin-top: 5px
+			padding: 0 25px
+
+.activity-block
+	padding-left: 120px
+	padding-right: 120px
+	.activity-block--column
+		h5, h6, h4
+			font-size: 16px
+			margin-bottom: 5px
+			text-align: left
+		p
+			font-size: 14px
+			margin-top: 10px
+		.activity-block--icon
+			width: 20%
+			img
+				max-height: 40px
+
+.advantages-work
+	padding-left: 120px
+	padding-right: 120px
+	padding-bottom: 90px
+	.advantages-work--column
+		text-align: center
+		margin-top: 15px
+		margin-bottom: 30px
+		.advantages-work--icon
+			width: 150px
+			height: 150px
+			overflow: hidden
+			border-radius: 50%
+			margin: auto
+			margin-bottom: 15px
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		p
+			font-size: 14px
+			font-weight: bold
+			color: #000
+			a
+				color: #000
+				border-bottom: 1px solid $colorFont
+				transition: $transition
+				&:hover,
+				&:active
+					color: $mainBg
+					border-bottom: 1px solid $mainBg
+
+.order
+	padding: 60px 0
+	text-align: center
+	.btn
+		padding: 15px 75px
+
+.seo-block
+	padding-left: 30px
+	padding-right: 30px
+	padding-bottom: 95px
+	h3,
+	h2,
+	h4,
+	h5,
+	h1,
+	h6
+		margin-bottom: 13px
+	p
+		margin-bottom: 25px
+
+
+
+
+
 
 /*-----------------------------------*/
 /*            Typography             */

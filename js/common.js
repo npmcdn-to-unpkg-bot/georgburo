@@ -28,6 +28,14 @@ $(function() {
 		}
 	});
 
+	//Каруселька портфолио
+	$('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    items:4,
+	    nav:true,
+	})
+
 });
 
 $(window).scroll(function() {

@@ -425,6 +425,52 @@ section h6 {
   margin-top: 20px;
 }
 
+.about-block .about-block--text .about-block--cat {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.about-block .about-block--text .about-block--title {
+  font-size: 54px;
+  margin-left: -28px;
+  margin-bottom: 20px;
+}
+
+.about-block .about-block--text .about-block--list {
+  margin-top: 35px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-block .about-block--text .about-block--list li {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  text-align: center;
+  padding-top: 60px;
+  position: relative;
+}
+
+.about-block .about-block--text .about-block--list li:before {
+  display: block;
+  right: 0;
+  margin: auto;
+  width: 46px;
+  height: 52px;
+}
+
+.about-block .about-block--text .about-block--list li.about-block--icon-time:before {
+  background-position: -224px -1px;
+}
+
+.about-block .about-block--text .about-block--list li.about-block--icon-pencil:before {
+  background-position: -109px -1px;
+}
+
+.about-block .about-block--text .about-block--list li.about-block--icon-oil:before {
+  background-position: -168px -1px;
+}
+
 .about-block .about-block--photo {
   overflow: hidden;
   height: 535px;
@@ -777,5 +823,123 @@ span.rur {
 }
 
 /*-----------------------------------*/
-/*            Typography             */
+/*    Запись. Портрет по фото        */
 /*-----------------------------------*/
+.about-block-single-page {
+  height: 410px;
+}
+
+.gift {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.gift .gift-column {
+  width: 28.2%;
+  float: left;
+  text-align: center;
+  margin: 20px 40px 45px;
+  box-shadow: 0 2px 4px 0 rgba(165, 165, 165, 0.7);
+}
+
+.gift .gift-column:first-of-type {
+  margin-left: 5px;
+}
+
+.gift .gift-column:last-of-type {
+  margin-right: 5px;
+}
+
+.gift .gift-column .gift-column--photo {
+  width: 100%;
+  height: 275px;
+  overflow: hidden;
+}
+
+.gift .gift-column .gift-column--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gift .gift-column .gift-column--text {
+  font-size: 13px;
+  text-align: left;
+  padding: 15px 20px 15px;
+  border: 1px solid #fe9902;
+  border-top: none;
+  min-height: 110px;
+}
+
+.gift .gift-column .gift-column--text p {
+  margin: 0;
+}
+
+.gift .gift-column.gift-column-reverse .gift-column--text {
+  border-top: 1px solid #fe9902;
+  border-bottom: none;
+}
+
+.unica-block {
+  padding: 50px 45px 40px;
+}
+
+.unica-block .unica-block--icon {
+  width: 20%;
+  float: left;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.unica-block .unica-block--info {
+  width: 80%;
+  float: left;
+  padding-left: 22px;
+}
+
+.unica-block .unica-block--info h4,
+.unica-block .unica-block--info h5,
+.unica-block .unica-block--info h6 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.unica-block .unica-block--info p {
+  font-size: 14px;
+}
+
+.portfolio-block {
+  padding: 70px 45px;
+}
+
+.portfolio-block .owl-carousel-portfolio .item {
+  height: 320px;
+}
+
+.portfolio-block .owl-carousel-portfolio .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-prev,
+.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url(../img/icon-sprite.png) no-repeat;
+  width: 18px;
+  height: 32px;
+  display: block;
+}
+
+.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-prev {
+  background-position: -30px -32px;
+  left: -49px;
+}
+
+.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-next {
+  background-position: -1px -32px;
+  right: -49px;
+}

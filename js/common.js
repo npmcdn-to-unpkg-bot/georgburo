@@ -34,6 +34,16 @@ $(function() {
 	    margin:10,
 	    items:4,
 	    nav:true,
+	    navText: false,
+	    responsive: false
+	})
+
+	//Каруселька отзывы
+	$('.owl-carousel-review').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    items:1,
+	    nav:true,
 	})
 
 });

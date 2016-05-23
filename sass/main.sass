@@ -276,7 +276,7 @@ header
 /*               Футер               */
 /*-----------------------------------*/
 footer
-	padding-bottom: 120px
+	padding-bottom: 20px
 	.footer-column
 		padding-left: 45px
 		padding-right: 45px
@@ -681,19 +681,212 @@ span.rur
 				width: 100%
 				height: 100%
 				object-fit: cover
-	.owl-carousel .owl-controls .owl-nav .owl-prev,
-	.owl-carousel .owl-controls .owl-nav .owl-next
-		position: absolute
-		top: 0
-		bottom: 0
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next
+	position: absolute
+	top: 0
+	bottom: 0
+	margin: auto
+	background: url(../img/icon-sprite.png) no-repeat
+	width: 18px
+	height: 32px
+	display: block
+.owl-carousel .owl-controls .owl-nav .owl-prev
+	background-position: -30px -32px
+	left: -49px
+.owl-carousel .owl-controls .owl-nav .owl-next
+	background-position: -1px -32px
+	right: -49px
+
+.review
+	.review-column
+		padding-left: 28px
+		padding-right: 28px
+	.owl-carousel-review
+		box-shadow: 0 0 25px 5px rgba(165,165,165,0.5)
+	.item
+		overflow: hidden
+	.item-photo
+		width: 50%
+		float: left
+		height: 326px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.item-info
+		width: 50%
+		float: left
+		height: 326px
+		overflow: hidden
+		background-color: $mainBg
+		padding: 89px 70px 75px 89px
+		color: #fff
+		position: relative
+		&:before
+			content: '“'
+			position: absolute
+			font-size: 100px
+			left: 53px
+			top: 100px
+		blockquote
+			margin: 0
+			text-align: left
+			font-size: 18px
+			line-height: 1.2
+			margin-bottom: 50px
+			height: 110px
+			overflow-y: auto
+			padding-right: 15px
+		cite
+			font-size: 18px
+			font-weight: bold
+			font-style: normal
+			display: block
+		.date
+			display: block
+			font-size: 12px
+
+/*-----------------------------------*/
+/*             Калькулятор           */
+/*-----------------------------------*/
+.form-order
+	margin-top: 80px
+	margin-bottom: 205px
+	.form-column
 		margin: auto
-		background: url(../img/icon-sprite.png) no-repeat
-		width: 18px
-		height: 32px
 		display: block
-	.owl-carousel .owl-controls .owl-nav .owl-prev
-		background-position: -30px -32px
-		left: -49px
-	.owl-carousel .owl-controls .owl-nav .owl-next
-		background-position: -1px -32px
-		right: -49px
+		float: none
+	form
+		background-color: #fcfcfc
+		padding: 39px 50px 0
+		box-shadow: 0 0 30px 5px rgba(188,188,188,0.5)
+		border-radius: 7px 7px 0 0
+		h3
+			text-align: center
+			margin-top: 0
+		label,
+		p
+			display: inline-block
+			width: 30%
+			vertical-align: middle
+			margin-bottom: 20px
+			font-size: 18px
+		.comment
+			vertical-align: top
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		textarea
+			width: 69%
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 26px
+			font-size: 18px
+			border: 1px solid #eaeaea
+			padding: 10px 20px
+			outline: none
+		textarea
+			resize: vertical
+		.divider
+			margin-bottom: 36px
+		ul
+			list-style: none
+			padding-left: 0
+			margin: 0
+			width: 69%
+			display: inline-block
+			vertical-align: bottom
+			li
+				display: inline-block
+				font-size: 18px
+				a
+					font-size: 18px
+					padding: 6px
+					text-decoration: underline
+					display: inline-block
+					text-align: center
+					&.active
+						color: #fff
+						background-color: $mainBg
+						text-decoration: none
+		p
+			margin-bottom: 4px
+		span
+			font-size: 14px
+			display: block
+			margin-top: 10px
+			margin-left: 31%
+		.price-block
+			display: inline-block
+			width: 69%
+			vertical-align: top
+			.cost
+				display: block
+				font-size: 24px
+				font-weight: bold
+				margin-top: 17px
+				.rur
+					display: inline
+					margin-left: 5px
+					font-size: 24px
+					font-weight: bold
+			.info-text
+				width: 100%
+				font-style: italic
+				font-size: 14px
+				margin-bottom: 20px
+			.file_upload
+				position: relative
+				overflow: hidden
+				font-size: 18px
+				margin-bottom: 5px
+			.file_upload > button
+				float: left
+				padding: 0
+				margin-bottom: 20px
+				color: $mainBg
+				background-color: transparent
+				border: none
+				border-bottom: 1px dotted $mainBg
+				&:hover,
+				&:active,
+				&:focus
+					border-bottom: none
+			.file_upload span
+				position: static
+				margin-top: 0
+				font-size: 18px
+				display: inline-block
+				margin-left: 10px
+			.file_upload input[type=file]
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				transform: scale(20)
+				letter-spacing: 10em
+				-ms-transform: scale(20)
+				opacity: 0
+				cursor: pointer
+		.submit-form
+			background-color: $mainBg
+			padding: 50px 0 40px
+			margin-left: -50px
+			margin-right: -50px
+			margin-top: 15px
+			text-align: center
+			border-radius: 0 0 7px 7px
+			input
+				background-color: transparent
+				width: 470px
+				letter-spacing: 1.2px
+				&:hover,
+				&:active,
+				&:focus
+					background-color: #fff
+					color: $mainBg
+
+

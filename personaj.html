@@ -163,37 +163,39 @@
 
 				<section class="review row">
 					<h3>Отзывы наших клиентов</h3>
-					<div class="owl-carousel-review">
-						<div class="item">
-							<div class="item-photo">
-								<img src="img/review_1.jpg" alt="">
+					<div class="col-xs-10 col-xs-offset-1 review-column">
+						<div class="owl-carousel-review">
+							<div class="item">
+								<div class="item-photo">
+									<img src="img/review_1.jpg" alt="">
+								</div>
+								<div class="item-info">
+									<blockquote>Портрет вышел в разы лучше чем сама фотография-оригинал. Такое ощущение, что с картины смотрит живой человек. Очень высокий уровень исполнения!</blockquote>
+									<cite>Людмила Трофимова</cite>
+									<span class="date">Октябрь 2015</span>
+								</div>
 							</div>
-							<div class="item-info">
-								<blockquote>Портрет вышел в разы лучше чем сама фотография-оригинал. Такое ощущение, что с картины смотрит живой человек. Очень высокий уровень исполнения!</blockquote>
-								<cite>Людмила Трофимова</cite>
-								<span class="date">Октябрь 2015</span>
-							</div>
-						</div>
 
-						<div class="item">
-							<div class="item-photo">
-								<img src="img/review_2.jpg" alt="">
+							<div class="item">
+								<div class="item-photo">
+									<img src="img/review_2.jpg" alt="">
+								</div>
+								<div class="item-info">
+									<blockquote>Заказывали маме на юбилей портрет по старым фото. Юбилярше и всем остальным, картина очень понравилась, спасибо!</blockquote>
+									<cite>Елена Видлога</cite>
+									<span class="date">Сентябрь 2015</span>
+								</div>
 							</div>
-							<div class="item-info">
-								<blockquote>Заказывали маме на юбилей портрет по старым фото. Юбилярше и всем остальным, картина очень понравилась, спасибо!</blockquote>
-								<cite>Елена Видлога</cite>
-								<span class="date">Сентябрь 2015</span>
-							</div>
-						</div>
 
-						<div class="item">
-							<div class="item-photo">
-								<img src="img/review_3.jpg" alt="">
-							</div>
-							<div class="item-info">
-								<blockquote>Заказывал портрет в подарок любимой девушке. Понравился подход и возможность общения в процессе работы, можно смотреть промежуточные результаты, вносить корректировки. Результат работы потрясающий! Очень довольны и будем рекомендовать. Спасибо!</blockquote>
-								<cite>Глеб Соловьев</cite>
-								<span class="date">Октябрь 2015</span>
+							<div class="item">
+								<div class="item-photo">
+									<img src="img/review_3.jpg" alt="">
+								</div>
+								<div class="item-info">
+									<blockquote>Заказывал портрет в подарок любимой девушке. Понравился подход и возможность общения в процессе работы, можно смотреть промежуточные результаты, вносить корректировки. Результат работы потрясающий! Очень довольны и будем рекомендовать. Спасибо!</blockquote>
+									<cite>Глеб Соловьев</cite>
+									<span class="date">Октябрь 2015</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -201,82 +203,52 @@
 
 
 				<div class="form-order row">
-					<div class="col-xs-6 col-xs-offset-3">
+					<div class="col-xs-7 form-column">
 						<form>
 							<h3>Заказать картину</h3>
 							<label for="name">Ваше имя:</label>
 							<input id="name" type="text" placeholder="Например, Алексей">
 
 							<label for="phone">Телефон:</label>
-							<input id="phone" type="text" placeholder="+7 921 123-45-67">
+							<input id="phone" type="tel" placeholder="+7 921 123-45-67">
 
 							<label for="email">Почта:</label>
-							<input id="email" type="text" placeholder="alex@example.com">
+							<input id="email" type="email" placeholder="alex@example.com">
+
+							<div class="divider"></div>
 
 							<p>Стиль портрета:</p>
-							<ul>
-								<li>
-									<input type="radio" class="radio" id="radio-style-personaj" name="radio" />
-									<label for="radio-style-personaj">Персонаж</label>,
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-style-family" name="radio" />
-									<label for="radio-style-family">Радость</label> или
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-style-romantic" name="radio" />
-									<label for="radio-style-romantic">Романтик</label>
-								</li>
-							</ul>
-
-							<p>Стиль портрета:</p>
-							<ul>
-								<li>
-									<input type="radio" class="radio" id="radio-style-personaj" name="radio" />
-									<label for="radio-style-personaj">Персонаж</label>,
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-style-family" name="radio" />
-									<label for="radio-style-family">Радость</label> или
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-style-romantic" name="radio" />
-									<label for="radio-style-romantic">Романтик</label>
-								</li>
+							<ul class="calc-list style-list">
+								<li><a href="#" class="personaj">Персонаж,</a></li>
+								<li><a href="#" class="family">Детский/Семейный,</a></li>
+								<li><a href="#" class="romantic">Романтик</a></li>
 							</ul>
 
 							<p>Техника портрета:</p>
-							<ul>
-								<li>
-									<input type="radio" class="radio" id="radio-pencil" name="radio" />
-									<label for="radio-pencil">Карандаш</label>,
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-pastel" name="radio" />
-									<label for="radio-pastel">пастель</label> или
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-oil" name="radio" />
-									<label for="radio-oil">масло</label>
-								</li>
+							<ul class="calc-list tech-list">
+								<li><a href="#" class="pencil">Карандаш,</a></li>
+								<li><a href="#" class="pastel">Пастель,</a></li>
+								<li><a href="#" class="oil">Масло</a></li>
 							</ul>
 
 							<p>Размер портрета:</p>
-							<ul>
-								<li>
-									<input type="radio" class="radio" id="radio-small" name="radio" />
-									До<label for="radio-small"> 20×20</label>,
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-medium" name="radio" />
-									<label for="radio-medium">40×40</label> или
-								</li>
-								<li>
-									<input type="radio" class="radio" id="radio-big" name="radio" />
-									<label for="radio-big">60×60</label>
-								</li>
+							<ul class="calc-list size-list">
+								<li><a href="#" class="size-xs">30х40,</a></li>
+								<li><a href="#" class="size-sm">40х50,</a></li>
+								<li><a href="#" class="size-md">50×60,</a></li>
+								<li><a href="#" class="size-lg">70×80</a></li>
 							</ul>
+							<span>*если вы хотите другой размер - укажите его в комментарии</span>
 
+							<p>Количество людей на&nbsp;картине:</p>
+							<ul class="calc-list qty-list">
+								<li><a href="#" class="qty-one">1 человек,</a></li>
+								<li><a href="#" class="qty-two">2 человека,</a></li>
+								<li><a href="#" class="qty-three">3 человека</a></li>
+							</ul>
+							<span>*если на портрете более 3х человек, укажите в комментарии.</span>
+
+							<div class="divider"></div>
 							<p>Цена картины:</p>
 							<div class="price-block">
 								<p class="cost">0 <span class="rur">i</span></p>
@@ -287,11 +259,11 @@
 								</div>
 							</div>
 
-							<label for="comment">Комментарий:</label>
-							<textarea id="comment" rows="7"></textarea>
+							<label for="comment" class="comment">Комментарий:</label>
+							<textarea id="comment" rows="5"></textarea>
 
 							<div class="submit-form">
-								<input type="submit" value="Отправить заявку">
+								<input type="submit" class="btn btn-light" value="Отправить заявку">
 							</div>
 						</form>
 					</div>

@@ -345,7 +345,7 @@ header .phone-column .phone-column--number a {
 /*               Футер               */
 /*-----------------------------------*/
 footer {
-  padding-bottom: 120px;
+  padding-bottom: 20px;
 }
 
 footer .footer-column {
@@ -922,8 +922,8 @@ span.rur {
   object-fit: cover;
 }
 
-.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-prev,
-.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-next {
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -934,12 +934,276 @@ span.rur {
   display: block;
 }
 
-.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-prev {
+.owl-carousel .owl-controls .owl-nav .owl-prev {
   background-position: -30px -32px;
   left: -49px;
 }
 
-.portfolio-block .owl-carousel .owl-controls .owl-nav .owl-next {
+.owl-carousel .owl-controls .owl-nav .owl-next {
   background-position: -1px -32px;
   right: -49px;
+}
+
+.review .review-column {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.review .owl-carousel-review {
+  box-shadow: 0 0 25px 5px rgba(165, 165, 165, 0.5);
+}
+
+.review .item {
+  overflow: hidden;
+}
+
+.review .item-photo {
+  width: 50%;
+  float: left;
+  height: 326px;
+  overflow: hidden;
+}
+
+.review .item-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review .item-info {
+  width: 50%;
+  float: left;
+  height: 326px;
+  overflow: hidden;
+  background-color: #fe9902;
+  padding: 89px 70px 75px 89px;
+  color: #fff;
+  position: relative;
+}
+
+.review .item-info:before {
+  content: '“';
+  position: absolute;
+  font-size: 100px;
+  left: 53px;
+  top: 100px;
+}
+
+.review .item-info blockquote {
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  height: 110px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.review .item-info cite {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
+
+.review .item-info .date {
+  display: block;
+  font-size: 12px;
+}
+
+/*-----------------------------------*/
+/*             Калькулятор           */
+/*-----------------------------------*/
+.form-order {
+  margin-top: 80px;
+  margin-bottom: 205px;
+}
+
+.form-order .form-column {
+  margin: auto;
+  display: block;
+  float: none;
+}
+
+.form-order form {
+  background-color: #fcfcfc;
+  padding: 39px 50px 0;
+  box-shadow: 0 0 30px 5px rgba(188, 188, 188, 0.5);
+  border-radius: 7px 7px 0 0;
+}
+
+.form-order form h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form-order form label,
+.form-order form p {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.form-order form .comment {
+  vertical-align: top;
+}
+
+.form-order form input[type="text"],
+.form-order form input[type="tel"],
+.form-order form input[type="email"],
+.form-order form textarea {
+  width: 69%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 26px;
+  font-size: 18px;
+  border: 1px solid #eaeaea;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.form-order form textarea {
+  resize: vertical;
+}
+
+.form-order form .divider {
+  margin-bottom: 36px;
+}
+
+.form-order form ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  width: 69%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.form-order form ul li {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.form-order form ul li a {
+  font-size: 18px;
+  padding: 6px;
+  text-decoration: underline;
+  display: inline-block;
+  text-align: center;
+}
+
+.form-order form ul li a.active {
+  color: #fff;
+  background-color: #fe9902;
+  text-decoration: none;
+}
+
+.form-order form p {
+  margin-bottom: 4px;
+}
+
+.form-order form span {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 31%;
+}
+
+.form-order form .price-block {
+  display: inline-block;
+  width: 69%;
+  vertical-align: top;
+}
+
+.form-order form .price-block .cost {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 17px;
+}
+
+.form-order form .price-block .cost .rur {
+  display: inline;
+  margin-left: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-order form .price-block .info-text {
+  width: 100%;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-order form .price-block .file_upload {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-order form .price-block .file_upload > button {
+  float: left;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #fe9902;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted #fe9902;
+}
+
+.form-order form .price-block .file_upload > button:hover,
+.form-order form .price-block .file_upload > button:active,
+.form-order form .price-block .file_upload > button:focus {
+  border-bottom: none;
+}
+
+.form-order form .price-block .file_upload span {
+  position: static;
+  margin-top: 0;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.form-order form .price-block .file_upload input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(20);
+      -ms-transform: scale(20);
+          transform: scale(20);
+  letter-spacing: 10em;
+  -ms-transform: scale(20);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-order form .submit-form {
+  background-color: #fe9902;
+  padding: 50px 0 40px;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 0 0 7px 7px;
+}
+
+.form-order form .submit-form input {
+  background-color: transparent;
+  width: 470px;
+  letter-spacing: 1.2px;
+}
+
+.form-order form .submit-form input:hover,
+.form-order form .submit-form input:active,
+.form-order form .submit-form input:focus {
+  background-color: #fff;
+  color: #fe9902;
 }

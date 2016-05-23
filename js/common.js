@@ -44,6 +44,14 @@ $(function() {
 	    margin:10,
 	    items:1,
 	    nav:true,
+	    navText: false
+	})
+
+	//Калькулятор. присваиваем выбранному элементу класс active
+	$('.calc-list a').click(function(e){
+		e.preventDefault();
+		$(this).closest(".calc-list").find('a').removeClass('active');
+  		$(this).addClass('active');
 	})
 
 });

@@ -1095,7 +1095,8 @@ span.rur {
   text-align: center;
 }
 
-.form-order form ul li a.active {
+.form-order form ul li a.active,
+.form-order form ul li a.active-qty {
   color: #fff;
   background-color: #fe9902;
   text-decoration: none;
@@ -1206,4 +1207,9 @@ span.rur {
 .form-order form .submit-form input:focus {
   background-color: #fff;
   color: #fe9902;
+}
+
+.form-order form .result,
+.form-order form .qty-list-result {
+  display: none;
 }

@@ -217,7 +217,7 @@ a, a:hover {
 header {
   box-shadow: 0 5px 10px -5px rgba(121, 121, 121, 0.5);
   position: relative;
-  padding: 20px 0;
+  padding: 9px 0 12px;
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease;
   background: #FFF;
@@ -245,9 +245,21 @@ header.sticky .logo-column .logo-sticky {
   width: auto;
 }
 
+header.sticky .social-column {
+  width: 10%;
+}
+
+header.sticky .social-column ul {
+  margin-top: 0;
+}
+
+header.sticky .social-column ul li {
+  margin: 10px 2px;
+}
+
 header.sticky .menu-column {
   width: 50%;
-  margin-left: 8%;
+  text-align: center;
 }
 
 header.sticky .menu-column ul {
@@ -263,7 +275,7 @@ header.sticky .menu-column ul li a {
 }
 
 header.sticky .phone-column {
-  width: 33.33%;
+  width: 31.33%;
 }
 
 header.sticky .phone-column .phone-column--number {
@@ -278,7 +290,7 @@ header.sticky .phone-column .phone-column--number a {
 
 header .logo-column {
   float: left;
-  width: 25%;
+  width: 28%;
   padding-left: 20px;
 }
 
@@ -292,10 +304,51 @@ header .logo-column .logo-sticky {
   display: none;
 }
 
+header .social-column {
+  width: 21%;
+  float: left;
+  text-align: center;
+}
+
+header .social-column ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 11px 0 0;
+}
+
+header .social-column ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 2px;
+}
+
+header .social-column ul li a {
+  font-size: 17px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fe9902;
+  color: #fff;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+
+header .social-column ul li a.vk:hover,
+header .social-column ul li a.vk:active {
+  background-color: #4c75a3;
+}
+
+header .social-column ul li a.fb:hover,
+header .social-column ul li a.fb:active {
+  background-color: #25478e;
+}
+
 header .menu-column {
   width: 25%;
   float: left;
-  margin-left: 25%;
 }
 
 header .menu-column ul {
@@ -332,6 +385,10 @@ header .phone-column {
   float: left;
   text-align: right;
   padding-right: 30px;
+}
+
+header .phone-column .phone-column--number {
+  margin-bottom: 7px;
 }
 
 header .phone-column .phone-column--number a {
@@ -609,6 +666,11 @@ section h6 {
 
 .advantages-work .advantages-work--column p a:hover,
 .advantages-work .advantages-work--column p a:active {
+  color: #fe9902;
+  border-bottom: 1px solid #fe9902;
+}
+
+.advantages-work .advantages-work--column .active-link-icon a {
   color: #fe9902;
   border-bottom: 1px solid #fe9902;
 }

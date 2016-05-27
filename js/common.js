@@ -47,6 +47,16 @@ $(function() {
 	    navText: false
 	})
 
+	//при наведении на иконку преимуществ, подсвечиваем ссылку
+	$('.advantages-work--icon').mouseover(function(){
+		$(this).siblings('p').addClass('active-link-icon');
+	})
+
+	$('.advantages-work--icon').mouseout(function(){
+		$(this).siblings('p').removeClass('active-link-icon');
+	})
+
+
 	//Калькулятор. присваиваем выбранному элементу класс active
 	$('.calc-list a').click(function(e){
 		e.preventDefault();

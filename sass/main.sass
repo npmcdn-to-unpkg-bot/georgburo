@@ -192,7 +192,7 @@ a, a:hover
 header
 	box-shadow: 0 5px 10px -5px rgba(121,121,121,0.5)
 	position: relative
-	padding: 20px 0
+	padding: 9px 0 12px
 	transition: all 0.4s ease
 	background: #FFF
 	z-index: 1000
@@ -209,9 +209,15 @@ header
 				display: block
 				height: 45px
 				width: auto
+		.social-column
+			width: 10%
+			ul
+				margin-top: 0
+				li
+					margin: 10px 2px
 		.menu-column
 			width: 50%
-			margin-left: 8%
+			text-align: center
 			ul
 				margin: 15px 0
 				li
@@ -219,7 +225,7 @@ header
 					a
 						color: $colorFont
 		.phone-column
-			width: 33.33%
+			width: 31.33%
 			.phone-column--number
 				display: inline-block
 				margin-right: 20px
@@ -229,7 +235,7 @@ header
 
 	.logo-column
 		float: left
-		width: 25%
+		width: 28%
 		padding-left: 20px
 		.logo-full
 			height: 76px
@@ -237,10 +243,39 @@ header
 			display: block
 		.logo-sticky
 			display: none
+	.social-column
+		width: 21%
+		float: left
+		text-align: center
+		ul
+			padding-left: 0
+			list-style: none
+			margin: 11px 0 0
+			li
+				display: inline-block
+				vertical-align: middle
+				margin: 15px 2px
+				a
+					font-size: 17px
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					background-color: $mainBg
+					color: #fff
+					display: inline-block
+					line-height: 30px
+					text-align: center
+					transition: $transition
+					&.vk:hover,
+					&.vk:active
+						background-color: #4c75a3
+					&.fb:hover,
+					&.fb:active
+						background-color: #25478e
+
 	.menu-column
 		width: 25%
 		float: left
-		margin-left: 25%
 		ul
 			padding-left: 0
 			list-style: none
@@ -265,11 +300,13 @@ header
 		float: left
 		text-align: right
 		padding-right: 30px
-		.phone-column--number a
-			font-size: 22px
-			font-weight: bold
-			color: $colorFont
-			display: block
+		.phone-column--number
+			margin-bottom: 7px
+			a
+				font-size: 22px
+				font-weight: bold
+				color: $colorFont
+				display: block
 
 
 /*-----------------------------------*/
@@ -459,6 +496,9 @@ section
 				&:active
 					color: $mainBg
 					border-bottom: 1px solid $mainBg
+		.active-link-icon a
+			color: $mainBg
+			border-bottom: 1px solid $mainBg
 
 .order
 	padding: 60px 0

@@ -344,7 +344,7 @@ section
 	overflow: hidden
 	.about-block--text
 		background-color: $mainBg
-		padding: 50px
+		padding: 53px 47px
 		color: #fff
 		min-height: 535px
 		h1,
@@ -362,6 +362,7 @@ section
 		h2>a,
 		h3>a
 			border-bottom: 1px solid #ffd69a
+			padding-bottom: 1px
 			&:hover,
 			&:active
 				border-bottom: none
@@ -408,7 +409,7 @@ section
 			height: 100%
 
 .advantages
-	padding: 80px 85px 90px 90px
+	padding: 80px 36px 90px 74px
 	.advantages--row
 		margin: 30px 0 90px
 		p
@@ -428,6 +429,8 @@ section
 			height: auto
 
 .our-masters
+	padding-left: 40px
+	padding-right: 40px
 	.our-masters--column
 		text-align: center
 		.our-masters--photo
@@ -450,8 +453,8 @@ section
 			padding: 0 25px
 
 .activity-block
-	padding-left: 120px
-	padding-right: 120px
+	padding-left: 40px
+	padding-right: 40px
 	.activity-block--column
 		h5, h6, h4
 			font-size: 16px
@@ -461,19 +464,19 @@ section
 			font-size: 14px
 			margin-top: 10px
 		.activity-block--icon
-			width: 20%
 			img
 				max-height: 40px
 
 .advantages-work
-	padding-left: 120px
-	padding-right: 120px
+	padding-left: 40px
+	padding-right: 40px
 	padding-bottom: 90px
 	.advantages-work--column
 		text-align: center
 		margin-top: 15px
 		margin-bottom: 30px
 		.advantages-work--icon
+			display: inline-block
 			width: 150px
 			height: 150px
 			overflow: hidden
@@ -553,6 +556,10 @@ span.rur
 			font-size: 44px
 			color: $colorFont
 			margin: 0 0 20px
+		h1,
+		h2,
+		h3
+			margin-left: -20px
 		h1>a,
 		h2>a,
 		h3>a
@@ -624,8 +631,8 @@ span.rur
 		display: none
 
 .about-portret
-	padding-left: 150px
-	padding-right: 150px
+	padding-left: 80px
+	padding-right: 80px
 	h1,
 	h2,
 	h3
@@ -657,6 +664,11 @@ span.rur
 /*-----------------------------------*/
 .about-block-single-page
 	height: 410px
+	.about-block--text
+		padding: 35px 47px
+		min-height: 410px
+	.about-block--photo
+		height: 410px
 
 .gift
 	padding-left: 45px
@@ -761,24 +773,21 @@ span.rur
 		height: 326px
 		overflow: hidden
 		background-color: $mainBg
-		padding: 89px 70px 75px 89px
+		padding: 55px 36px 34px 69px
 		color: #fff
 		position: relative
 		&:before
 			content: '“'
 			position: absolute
 			font-size: 100px
-			left: 53px
-			top: 100px
+			left: 39px
+			top: 58px
 		blockquote
 			margin: 0
 			text-align: left
 			font-size: 18px
-			line-height: 1.2
-			margin-bottom: 50px
-			height: 110px
-			overflow-y: auto
-			padding-right: 15px
+			line-height: 22px
+			margin-bottom: 35px
 		cite
 			font-size: 18px
 			font-weight: bold
@@ -843,8 +852,9 @@ span.rur
 				font-size: 18px
 				a
 					font-size: 18px
-					padding: 6px
-					text-decoration: underline
+					margin: 6px
+					padding: 0
+					border-bottom: 1px dotted $mainBg
 					display: inline-block
 					text-align: center
 					&.active,
@@ -852,6 +862,8 @@ span.rur
 						color: #fff
 						background-color: $mainBg
 						text-decoration: none
+						margin: 0
+						padding: 6px
 		p
 			margin-bottom: 4px
 		span

@@ -2,20 +2,13 @@
 /* CSS Document */
 
 /* Bootstrap */
-@import url("libs/bootstrap/css/bootstrap-grid.min.css");
+@import url("libs/bootstrap/css/bootstrap.min.css");
 
 /* modal */
 @import url("libs/MagnificPopup/dist/magnific-popup.css");
 
 /* owl-carousel */
 @import url("libs/owl.carousel/assets/owl.carousel.css");
-
-/* prettyPhoto */
-/*@import url("libs/prettyPhoto/css/prettyPhoto.css");*/
-
-/* Scroll */
-/*@import url("libs/jScrollPane/style/jquery.jscrollpane.css");
-*/
 
 /* main */
 @import url("css/main.css");

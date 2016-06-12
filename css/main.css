@@ -445,7 +445,7 @@ section h6 {
 
 .about-block .about-block--text {
   background-color: #fe9902;
-  padding: 50px;
+  padding: 53px 47px;
   color: #fff;
   min-height: 535px;
 }
@@ -467,6 +467,7 @@ section h6 {
 .about-block .about-block--text h2 > a,
 .about-block .about-block--text h3 > a {
   border-bottom: 1px solid #ffd69a;
+  padding-bottom: 1px;
 }
 
 .about-block .about-block--text h1 > a:hover,
@@ -541,7 +542,7 @@ section h6 {
 }
 
 .advantages {
-  padding: 80px 85px 90px 90px;
+  padding: 80px 36px 90px 74px;
 }
 
 .advantages .advantages--row {
@@ -568,6 +569,11 @@ section h6 {
 .advantages .advantages--photo img {
   width: 100%;
   height: auto;
+}
+
+.our-masters {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .our-masters .our-masters--column {
@@ -601,8 +607,8 @@ section h6 {
 }
 
 .activity-block {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .activity-block .activity-block--column h5, .activity-block .activity-block--column h6, .activity-block .activity-block--column h4 {
@@ -616,17 +622,13 @@ section h6 {
   margin-top: 10px;
 }
 
-.activity-block .activity-block--column .activity-block--icon {
-  width: 20%;
-}
-
 .activity-block .activity-block--column .activity-block--icon img {
   max-height: 40px;
 }
 
 .advantages-work {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 90px;
 }
 
@@ -637,6 +639,7 @@ section h6 {
 }
 
 .advantages-work .advantages-work--column .advantages-work--icon {
+  display: inline-block;
   width: 150px;
   height: 150px;
   overflow: hidden;
@@ -745,6 +748,12 @@ span.rur {
   margin: 0 0 20px;
 }
 
+.services-block .services-block--text h1,
+.services-block .services-block--text h2,
+.services-block .services-block--text h3 {
+  margin-left: -20px;
+}
+
 .services-block .services-block--text h1 > a,
 .services-block .services-block--text h2 > a,
 .services-block .services-block--text h3 > a {
@@ -844,8 +853,8 @@ span.rur {
 }
 
 .about-portret {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .about-portret h1,
@@ -888,6 +897,15 @@ span.rur {
 /*    Запись. Портрет по фото        */
 /*-----------------------------------*/
 .about-block-single-page {
+  height: 410px;
+}
+
+.about-block-single-page .about-block--text {
+  padding: 35px 47px;
+  min-height: 410px;
+}
+
+.about-block-single-page .about-block--photo {
   height: 410px;
 }
 
@@ -1038,7 +1056,7 @@ span.rur {
   height: 326px;
   overflow: hidden;
   background-color: #fe9902;
-  padding: 89px 70px 75px 89px;
+  padding: 55px 36px 34px 69px;
   color: #fff;
   position: relative;
 }
@@ -1047,19 +1065,16 @@ span.rur {
   content: '“';
   position: absolute;
   font-size: 100px;
-  left: 53px;
-  top: 100px;
+  left: 39px;
+  top: 58px;
 }
 
 .review .item-info blockquote {
   margin: 0;
   text-align: left;
   font-size: 18px;
-  line-height: 1.2;
-  margin-bottom: 50px;
-  height: 110px;
-  overflow-y: auto;
-  padding-right: 15px;
+  line-height: 22px;
+  margin-bottom: 35px;
 }
 
 .review .item-info cite {
@@ -1151,8 +1166,9 @@ span.rur {
 
 .form-order form ul li a {
   font-size: 18px;
-  padding: 6px;
-  text-decoration: underline;
+  margin: 6px;
+  padding: 0;
+  border-bottom: 1px dotted #fe9902;
   display: inline-block;
   text-align: center;
 }
@@ -1162,6 +1178,8 @@ span.rur {
   color: #fff;
   background-color: #fe9902;
   text-decoration: none;
+  margin: 0;
+  padding: 6px;
 }
 
 .form-order form p {

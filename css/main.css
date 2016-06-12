@@ -1090,6 +1090,47 @@ span.rur {
 }
 
 /*-----------------------------------*/
+/*        Картины на заказ           */
+/*-----------------------------------*/
+.services-block--pictures .services-block--text,
+.services-block--pictures .services-block--photo {
+  height: 400px;
+}
+
+.services-block--pictures .services-block--text h2,
+.services-block--pictures .services-block--text h1,
+.services-block--pictures .services-block--text h3,
+.services-block--pictures .services-block--text h4 {
+  margin-bottom: 30px;
+  margin-left: 0;
+  position: relative;
+}
+
+.services-block--pictures .services-block--text h2:before,
+.services-block--pictures .services-block--text h1:before,
+.services-block--pictures .services-block--text h3:before,
+.services-block--pictures .services-block--text h4:before {
+  content: '«';
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.about-portret-pictures {
+  padding: 52px 0;
+}
+
+.about-portret-pictures h1,
+.about-portret-pictures h2,
+.about-portret-pictures h3 {
+  margin-bottom: 30px;
+}
+
+.about-portret-pictures .about-portret--info {
+  margin-top: 20px;
+}
+
+/*-----------------------------------*/
 /*             Калькулятор           */
 /*-----------------------------------*/
 .form-order {

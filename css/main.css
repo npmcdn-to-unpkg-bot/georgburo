@@ -443,6 +443,10 @@ section h6 {
   overflow: hidden;
 }
 
+.about-block:nth-of-type(even) .about-block--text {
+  float: right;
+}
+
 .about-block .about-block--text {
   background-color: #fe9902;
   padding: 53px 47px;
@@ -723,6 +727,10 @@ span.rur {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.services-block:nth-of-type(even) .services-block--text {
+  float: right;
 }
 
 .services-block .services-block--text {
@@ -1157,7 +1165,7 @@ span.rur {
 }
 
 .form-order form label,
-.form-order form p {
+.form-order form p.text {
   display: inline-block;
   width: 30%;
   vertical-align: middle;
@@ -1223,11 +1231,11 @@ span.rur {
   padding: 6px;
 }
 
-.form-order form p {
+.form-order form p.text {
   margin-bottom: 4px;
 }
 
-.form-order form span {
+.form-order form span.desc {
   font-size: 14px;
   display: block;
   margin-top: 10px;

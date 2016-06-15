@@ -342,6 +342,9 @@ section
 .about-block
 	max-height: 535px
 	overflow: hidden
+	&:nth-of-type(even)
+		.about-block--text
+			float: right
 	.about-block--text
 		background-color: $mainBg
 		padding: 53px 47px
@@ -539,6 +542,9 @@ span.rur
 	left: 0
 
 .services-block
+	&:nth-of-type(even)
+		.services-block--text
+			float: right
 	.services-block--text
 		padding: 45px
 		height: 410px
@@ -847,7 +853,7 @@ span.rur
 			text-align: center
 			margin-top: 0
 		label,
-		p
+		p.text
 			display: inline-block
 			width: 30%
 			vertical-align: middle
@@ -895,9 +901,9 @@ span.rur
 						text-decoration: none
 						margin: 0
 						padding: 6px
-		p
+		p.text
 			margin-bottom: 4px
-		span
+		span.desc
 			font-size: 14px
 			display: block
 			margin-top: 10px

@@ -533,6 +533,16 @@ section h6 {
   background-position: -168px -1px;
 }
 
+.about-block .about-block--text .about-block--list li.about-block--icon-cost:before {
+  background-position: -5px -77px;
+  top: 9px;
+}
+
+.about-block .about-block--text .about-block--list li.about-block--icon-baguette:before {
+  background-position: -67px -79px;
+  top: 13px;
+}
+
 .about-block .about-block--photo {
   overflow: hidden;
   height: 535px;
@@ -1341,4 +1351,131 @@ span.rur {
 .form-order form .result,
 .form-order form .qty-list-result {
   display: none;
+}
+
+/*-----------------------------------*/
+/*             Копии картин          */
+/*-----------------------------------*/
+.copy-pictures .about-block {
+  height: 400px;
+}
+
+.copy-pictures .about-block .about-block--title {
+  font-size: 44px;
+}
+
+.copy-pictures .about-block--photo img {
+  height: auto;
+}
+
+.copy-pictures .price-block {
+  padding: 60px 0 125px;
+}
+
+.copy-pictures .price-block h2 {
+  margin-bottom: 10px;
+}
+
+.copy-pictures .price-block .title {
+  margin-top: 20px;
+  margin-bottom: 64px;
+}
+
+.copy-pictures .price-block .title,
+.copy-pictures .price-block .tabs__caption {
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.copy-pictures .price-block .tabs__caption {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.copy-pictures .price-block .tabs__caption li {
+  display: inline-block;
+  vertical-align: baseline;
+  color: #fe9902;
+  border-bottom: 3px dotted #fe9902;
+  padding: 17px 5px;
+  cursor: pointer;
+}
+
+.copy-pictures .price-block .tabs__caption li.active {
+  color: #fff;
+  background-color: #fe9902;
+  border-bottom: 3px solid #fe9902;
+}
+
+.copy-pictures .price-block .tabs__content {
+  display: none;
+}
+
+.copy-pictures .price-block .tabs__content.active {
+  display: block;
+}
+
+.copy-pictures .price-block .tabs__content img {
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(82, 82, 82, 0.7);
+}
+
+.copy-pictures .price-block .tabs__content figcaption {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.copy-pictures .price-block .tabs__content h3 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.copy-pictures .price-block .tabs__content p {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 1.200em;
+}
+
+.copy-pictures .price-block .tabs__content .price-block--list {
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.copy-pictures .price-block .tabs__content .price-block--list li {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  text-align: left;
+  padding-top: 60px;
+  position: relative;
+  color: #fe9902;
+  font-weight: bold;
+}
+
+.copy-pictures .price-block .tabs__content .price-block--list li:before {
+  display: block;
+  left: 16px;
+  width: 44px;
+  height: 52px;
+}
+
+.copy-pictures .price-block .tabs__content .price-block--list li.price-block--icon-time:before {
+  background-position: -122px -67px;
+}
+
+.copy-pictures .price-block .tabs__content .price-block--list li.price-block--icon-cost:before {
+  background-position: -180px -75px;
+  top: 7px;
+}
+
+.copy-pictures .price-block .tabs__content .btn {
+  padding: 7px 36px;
+  border-radius: 3px;
 }

@@ -401,6 +401,12 @@ section
 					background-position: -109px -1px
 				&.about-block--icon-oil:before
 					background-position: -168px -1px
+				&.about-block--icon-cost:before
+					background-position: -5px -77px
+					top: 9px
+				&.about-block--icon-baguette:before
+					background-position: -67px -79px
+					top: 13px
 
 	.about-block--photo
 		overflow: hidden
@@ -981,5 +987,93 @@ span.rur
 		.result,
 		.qty-list-result
 			display: none
+
+
+/*-----------------------------------*/
+/*             Копии картин          */
+/*-----------------------------------*/
+.copy-pictures
+	.about-block
+		height: 400px
+		.about-block--title
+			font-size: 44px
+	.about-block--photo
+		img
+			height: auto
+	.price-block
+		padding: 60px 0 125px
+		h2
+			margin-bottom: 10px
+		.title
+			margin-top: 20px
+			margin-bottom: 64px
+		.title,
+		.tabs__caption
+			font-size: 44px
+			font-weight: bold
+			text-align: center
+		.tabs__caption
+			padding-left: 0
+			list-style: none
+			margin: 0
+			overflow: hidden
+			li
+				display: inline-block
+				vertical-align: baseline
+				color: $mainBg
+				border-bottom: 3px dotted $mainBg
+				padding: 17px 5px
+				cursor: pointer
+				&.active
+					color: #fff
+					background-color: $mainBg
+					border-bottom: 3px solid $mainBg
+
+		.tabs__content
+			display: none
+			&.active
+				display: block
+			img
+				width: 100%
+				box-shadow: 0 2px 5px 0 rgba(82,82,82,0.7)
+			figcaption
+				margin-top: 30px
+				font-size: 20px
+				text-align: center
+			h3
+				font-weight: bold
+				font-size: 20px
+				text-align: left
+				margin-bottom: 10px
+			p
+				margin-top: 0
+				font-size: 20px
+				line-height: 1.200em
+			.price-block--list
+				list-style: none
+				margin-top: 30px
+				padding-left: 0
+				li
+					display: inline-block
+					vertical-align: top
+					width: 25%
+					text-align: left
+					padding-top: 60px
+					position: relative
+					color: $mainBg
+					font-weight: bold
+					&:before
+						display: block
+						left: 16px
+						width: 44px
+						height: 52px
+					&.price-block--icon-time:before
+						background-position: -122px -67px
+					&.price-block--icon-cost:before
+						background-position: -180px -75px
+						top: 7px
+			.btn
+				padding: 7px 36px
+				border-radius: 3px
 
 

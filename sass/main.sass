@@ -1023,7 +1023,7 @@ div.pp_pic_holder
 			list-style: none
 			margin: 0
 			overflow: hidden
-			li
+			span
 				display: inline-block
 				vertical-align: baseline
 				color: $mainBg
@@ -1098,7 +1098,8 @@ div.pp_pic_holder
 					margin-top: 8px
 
 	.portfolio-pictures
-		padding: 60px 125px
+		padding: 60px 125px 120px
+		position: relative
 		.portfolio-pictures-img
 			width: 33.3%
 			float: left
@@ -1118,7 +1119,15 @@ div.pp_pic_holder
 			color: $mainBg
 			text-align: center
 			padding: 15px 97px
-			margin: 60px auto 0
+			cursor: pointer
+			position: absolute
+			width: 475px
+			height: 60px
+			left: 0
+			right: 0
+			bottom: 0
+			margin: auto
+			display: block
 			&:hover
 				background: $mainBg
 				color: #fff
@@ -1128,7 +1137,7 @@ div.pp_pic_holder
 		h2
 			text-align: center
 	.copy-block-adv
-		background: url(../img/bg_adv_copy.jpg) 0 0 no-repeat
+		background: #2a2f40 url(../img/bg_copy.jpg) 0 0 no-repeat
 		background-size: cover
 		overflow: hidden
 		padding-top: 68px
@@ -1139,6 +1148,8 @@ div.pp_pic_holder
 		margin-bottom: 77px
 		form
 			padding: 39px 90px 0
+			p
+				margin: 0
 			.submit-form
 				margin-left: -90px
 				margin-right: -90px
@@ -1147,17 +1158,22 @@ div.pp_pic_holder
 			label,
 			p.text
 				width: 33%
+				margin-bottom: 0
+				margin-top: 20px
 			input[type="text"],
 			input[type="tel"],
 			input[type="email"],
 			textarea
 				width: 66%
+				margin-bottom: 0
+				margin-top: 26px
 			.decs
 				font-style: italic
 				font-size: 14px
 				display: inline-block
 				margin-left: 34%
 				margin-bottom: 5px
+				margin-top: 26px
 			.file_upload
 				position: relative
 				overflow: hidden
@@ -1193,7 +1209,8 @@ div.pp_pic_holder
 				-ms-transform: scale(20)
 				opacity: 0
 				cursor: pointer
-
+			span.wpcf7-not-valid-tip
+				margin-left: 33%
 
 
 

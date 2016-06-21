@@ -1405,7 +1405,7 @@ div.pp_pic_holder {
   overflow: hidden;
 }
 
-.copy-pictures .price-block .tabs__caption li {
+.copy-pictures .price-block .tabs__caption span {
   display: inline-block;
   vertical-align: baseline;
   color: #fe9902;
@@ -1414,7 +1414,7 @@ div.pp_pic_holder {
   cursor: pointer;
 }
 
-.copy-pictures .price-block .tabs__caption li.active {
+.copy-pictures .price-block .tabs__caption span.active {
   color: #fff;
   background-color: #fe9902;
   border-bottom: 3px solid #fe9902;
@@ -1511,7 +1511,8 @@ div.pp_pic_holder {
 }
 
 .copy-pictures .portfolio-pictures {
-  padding: 60px 125px;
+  padding: 60px 125px 120px;
+  position: relative;
 }
 
 .copy-pictures .portfolio-pictures .portfolio-pictures-img {
@@ -1537,7 +1538,15 @@ div.pp_pic_holder {
   color: #fe9902;
   text-align: center;
   padding: 15px 97px;
-  margin: 60px auto 0;
+  cursor: pointer;
+  position: absolute;
+  width: 475px;
+  height: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
 }
 
 .copy-pictures .portfolio-pictures .btn:hover {
@@ -1554,7 +1563,7 @@ div.pp_pic_holder {
 }
 
 .copy-pictures .copy-block-adv {
-  background: url(../img/bg_adv_copy.jpg) 0 0 no-repeat;
+  background: #2a2f40 url(../img/bg_copy.jpg) 0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
   padding-top: 68px;
@@ -1570,6 +1579,10 @@ div.pp_pic_holder {
   padding: 39px 90px 0;
 }
 
+.copy-pictures .form-order form p {
+  margin: 0;
+}
+
 .copy-pictures .form-order form .submit-form {
   margin-left: -90px;
   margin-right: -90px;
@@ -1580,6 +1593,8 @@ div.pp_pic_holder {
 .copy-pictures .form-order form label,
 .copy-pictures .form-order form p.text {
   width: 33%;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .copy-pictures .form-order form input[type="text"],
@@ -1587,6 +1602,8 @@ div.pp_pic_holder {
 .copy-pictures .form-order form input[type="email"],
 .copy-pictures .form-order form textarea {
   width: 66%;
+  margin-bottom: 0;
+  margin-top: 26px;
 }
 
 .copy-pictures .form-order form .decs {
@@ -1595,6 +1612,7 @@ div.pp_pic_holder {
   display: inline-block;
   margin-left: 34%;
   margin-bottom: 5px;
+  margin-top: 26px;
 }
 
 .copy-pictures .form-order form .file_upload {
@@ -1642,4 +1660,8 @@ div.pp_pic_holder {
   -ms-transform: scale(20);
   opacity: 0;
   cursor: pointer;
+}
+
+.copy-pictures .form-order form span.wpcf7-not-valid-tip {
+  margin-left: 33%;
 }

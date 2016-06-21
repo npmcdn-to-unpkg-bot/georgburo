@@ -56,48 +56,53 @@ $(function() {
 			.eq($(this).index()).addClass('active');
 	});
 
-	//Картинка в модалке
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		show_title: false, /* true/false */
-		markup: '<div class="pp_pic_holder"> \
-					<div class="ppt">&nbsp;</div> \
-					<div class="pp_top"> \
-						<div class="pp_left"></div> \
-						<div class="pp_middle"></div> \
-						<div class="pp_right"></div> \
-					</div> \
-					<div class="pp_content_container"> \
-						<div class="pp_left"> \
-						<div class="pp_right"> \
-							<div class="pp_content"> \
-								<div class="pp_loaderIcon"></div> \
-								<div class="pp_fade"> \
-									<div class="pp_hoverContainer"> \
-										<a class="pp_next" href="#">next</a> \
-										<a class="pp_previous" href="#">previous</a> \
-									</div> \
-									<div id="pp_full_res"></div> \
-									<div class="pp_details"> \
-										<p class="pp_description"></p> \
-										{pp_social} \
-										<a class="pp_close" href="#">Close</a> \
-									</div> \
-								</div> \
-							</div> \
-						</div> \
-						</div> \
-					</div> \
-					<div class="pp_bottom"> \
-						<div class="pp_left"></div> \
-						<div class="pp_middle"></div> \
-						<div class="pp_right"></div> \
-					</div> \
-				</div> \
-				<div class="pp_overlay"></div>',
-		gallery_markup: '',
-		social_tools: false /* html or false to disable */
+
+	jQuery(function($){
+		$('#true_loadmore').click(function(){
+			$(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
+			var data = {
+				'action': 'loadmore',
+				'query': true_posts,
+				'page' : current_page
+			};
+			$.ajax({
+				url:ajaxurl, // обработчик
+				data:data, // данные
+				type:'POST', // тип запроса
+				success:function(data){
+					if( data ) {
+						$('#true_loadmore').text('Загрузить еще примеры работ').before(data); // вставляем новые посты
+						current_page++; // увеличиваем номер страницы на единицу
+						if (current_page == max_pages) $("#true_loadmore").remove(); // если последняя страница, удаляем кнопку
+					} else {
+						$('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
+					}
+				}
+			});
+		});
 	});
 
+	//Картинка в модалке
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			markup: '<div class="mfp-figure">'+
+            '<div class="mfp-close"></div>'+
+            '<div class="mfp-img"></div>'+
+            '<div class="mfp-bottom-bar">'+
+              '<div class="mfp-counter"></div>'+
+            '</div>'+
+          '</div>',
+		}
+	});
 
 
 	//при наведении на иконку преимуществ, подсвечиваем ссылку

@@ -120,33 +120,31 @@ $(function() {
 	            '<div class="mfp-img"></div>'+
 	            '<div class="mfp-bottom-bar">'+
 	              '<div class="mfp-title"></div>'+
-	              '<div class="mfp-counter"></div>'+
 	            '</div>'+
-	          '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+	          '</div>',
 
-  			cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+  			cursor: 'mfp-zoom-out-cur',
 
-		    titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
-		    // Or the function that should return the title. For example:
-		    // titleSrc: function(item) {
-		    //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-		    // }
-
-		    verticalFit: true, // Fits image in area vertically
-
-		    tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+		    titleSrc: function(item) {
+		       return '<div class="left-column"><span class="title">' + item.el.attr('title') + '</span></div>' + '<div class="right-column"><span class="size">' + item.el.attr('data-size') + '</span>' + '<span class="price">' + item.el.attr('data-price') + '<span class="rur">i</span></span></div>';
+		    },
 		}
 
 	});
 
 	//Портфолио
-	$('.grid').masonry({
-	  // options
-	  itemSelector: '.grid-item',
-	  columnWidth: '.persent-size',
-      percentPosition: true,
-      resize: false
-	});
+	var $container = $('.grid');
+		$container.masonry({
+			itemSelector : '.grid-item',
+			columnWidth: 10,
+			isFitWidth: true,
+			isAnimated: !Modernizr.csstransitions,
+			animationOptions: {
+				duration: 750,
+				queue: false
+			}
+		});
+
 
 
 	//при наведении на иконку преимуществ, подсвечиваем ссылку

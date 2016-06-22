@@ -1678,19 +1678,30 @@ div.pp_pic_holder {
   margin-top: 49px;
 }
 
-.portfolio-page .persent-size {
-  width: 25%;
+.portfolio-page .grid-item {
+  position: relative;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 310px;
+  height: 310px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(82, 82, 82, 0.7);
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
 }
 
-.portfolio-page .grid-item {
-  margin-bottom: 10px;
-  padding: 0 5px;
+.portfolio-page .grid-item.grid-item-text {
+  box-shadow: none;
+}
+
+.portfolio-page .grid-item.grid-item-text:hover {
+  background-color: #fff;
 }
 
 .portfolio-page .grid-item img {
   object-fit: cover;
   width: 100%;
-  box-shadow: 0 2px 5px 0 rgba(82, 82, 82, 0.7);
+  height: 100%;
 }
 
 .portfolio-page .grid-item h5,
@@ -1713,21 +1724,93 @@ div.pp_pic_holder {
   padding-bottom: 40px;
 }
 
-.portfolio-page .grid-item--md,
-.portfolio-page .grid-item--lg,
-.portfolio-page .grid-item--xl {
-  height: 360px;
-  overflow: hidden;
+.portfolio-page .grid-item:hover {
+  background-color: rgba(254, 153, 2, 0.7);
+}
+
+.portfolio-page .grid-item:hover img {
+  opacity: 0.3;
+}
+
+.portfolio-page .grid-item:hover .grid-item-info {
+  opacity: 1;
+}
+
+.portfolio-page .grid-item .grid-item-info {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  background-color: #fff;
+  padding: 10px 15px;
+  bottom: 0;
+  left: 0;
+}
+
+.portfolio-page .grid-item .grid-item-info p {
+  color: #333333;
+  font-size: 20px;
+  padding: 0;
+  font-weight: normal;
+}
+
+.portfolio-page .grid-item .grid-item-info p.title {
+  display: inline-block;
+  width: 100%;
+}
+
+.portfolio-page .grid-item .grid-item-info p.size {
+  display: inline-block;
+  width: 49%;
+  text-align: left;
+}
+
+.portfolio-page .grid-item .grid-item-info p.price {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+  font-weight: bold;
+  color: #fe9902;
+}
+
+.portfolio-page .vertical {
+  height: 630px;
 }
 
 .portfolio-page .grid-item--md {
-  width: 50%;
+  width: 470px;
 }
 
 .portfolio-page .grid-item--lg {
-  width: 66.6%;
+  width: 630px;
 }
 
 .portfolio-page .grid-item--xl {
-  width: 75%;
+  width: 790px;
+}
+
+.mfp-title .left-column {
+  width: 50%;
+  float: left;
+}
+
+.mfp-title .right-column {
+  float: right;
+  width: 50%;
+}
+
+.mfp-title .size,
+.mfp-title .price {
+  width: 50%;
+  display: inline-block;
+}
+
+.mfp-title .title,
+.mfp-title .size,
+.mfp-title .price {
+  font-size: 18px;
+}
+
+.mfp-title .price {
+  font-weight: bold;
 }

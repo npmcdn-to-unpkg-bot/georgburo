@@ -365,10 +365,10 @@ $(function() {
 		var QtyTotal = $('.qty-list-result').text();
 		var resultText = $('.form-column .result').text();
 
-		if(QtyTotal == 'qty-two'){
+		if(QtyTotal == 'two'){
 			$('.price-block .cost').html((totalCostQty * 1.3) + '<span class="rur">i</span>');
 		}
-		if(QtyTotal == 'qty-three'){
+		if(QtyTotal == 'three'){
 			$('.price-block .cost').html((totalCostQty * 1.6) + '<span class="rur">i</span>');
 		}
 		if(resultText.indexOf("romantic") !== -1){

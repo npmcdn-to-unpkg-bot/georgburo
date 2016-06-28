@@ -1372,6 +1372,25 @@ div.pp_pic_holder {
 
 .copy-pictures .about-block .about-block--title {
   font-size: 44px;
+  margin-left: 0;
+  position: relative;
+}
+
+.copy-pictures .about-block .about-block--title:before {
+  content: '«';
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.copy-pictures .about-block--text {
+  min-height: 400px;
+  height: 400px;
+}
+
+.copy-pictures .about-block--photo {
+  min-height: 400px;
+  height: 400px;
 }
 
 .copy-pictures .about-block--photo img {
@@ -1494,6 +1513,14 @@ div.pp_pic_holder {
   padding: 46px 0;
 }
 
+.copy-pictures .activity-block .activity-block--column {
+  width: 28.57142857%;
+}
+
+.copy-pictures .activity-block .activity-block--column .activity-block--icon {
+  width: 21.42857143%;
+}
+
 .copy-pictures .activity-block .activity-block--column .activity-block--icon img {
   max-height: 67px;
 }
@@ -1508,6 +1535,10 @@ div.pp_pic_holder {
 
 .copy-pictures .activity-block .activity-block--column:nth-of-type(4) img {
   margin-top: 8px;
+}
+
+.copy-pictures .activity-block .activity-block--column .activity-block--info {
+  width: 78.57142857%;
 }
 
 .copy-pictures .portfolio-pictures {
@@ -1563,11 +1594,20 @@ div.pp_pic_holder {
 }
 
 .copy-pictures .copy-block-adv {
-  background: #2a2f40 url(../img/bg_copy.jpg) 0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding-top: 68px;
-  padding-bottom: 102px;
+  min-height: 600px;
+}
+
+.copy-pictures .desc-block {
+  padding: 27px 0;
+  text-align: center;
+}
+
+.copy-pictures .desc-block p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.333em;
 }
 
 .copy-pictures .form-order {
@@ -1583,11 +1623,19 @@ div.pp_pic_holder {
   margin: 0;
 }
 
+.copy-pictures .form-order form .bold-info {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.333em;
+  text-align: center;
+  margin-top: 35px;
+}
+
 .copy-pictures .form-order form .submit-form {
   margin-left: -90px;
   margin-right: -90px;
   margin-top: 25px;
-  padding: 40px 0 48px;
+  padding: 40px 0 22px;
 }
 
 .copy-pictures .form-order form label,
@@ -1606,6 +1654,14 @@ div.pp_pic_holder {
   margin-top: 26px;
 }
 
+.copy-pictures .form-order form textarea::-webkit-input-placeholder,
+.copy-pictures .form-order form textarea::-moz-placeholder,
+.copy-pictures .form-order form textarea:-moz-placeholder,
+.copy-pictures .form-order form textarea:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 1.333em;
+}
+
 .copy-pictures .form-order form .decs {
   font-style: italic;
   font-size: 14px;
@@ -1619,14 +1675,14 @@ div.pp_pic_holder {
   position: relative;
   overflow: hidden;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   margin-left: 34%;
 }
 
 .copy-pictures .form-order form .file_upload > button {
   float: left;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: #fe9902;
   background-color: transparent;
   border: none;
@@ -1645,6 +1701,13 @@ div.pp_pic_holder {
   font-size: 18px;
   display: inline-block;
   margin-left: 10px;
+}
+
+.copy-pictures .form-order form .file_upload .desc {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 0;
+  font-style: italic;
 }
 
 .copy-pictures .form-order form .file_upload input[type=file] {
@@ -1813,4 +1876,94 @@ div.pp_pic_holder {
 
 .mfp-title .price {
   font-weight: bold;
+}
+
+/*-----------------------------------*/
+/*         Картины для интерьера     */
+/*-----------------------------------*/
+.kartinyi-dlya-interera .about-block .about-block--text {
+  padding: 19px 47px;
+}
+
+.kartinyi-dlya-interera .price-block .title {
+  display: inline-block;
+}
+
+.kartinyi-dlya-interera .activity-block .activity-block--column {
+  width: 42.85714286%;
+}
+
+.kartinyi-dlya-interera .activity-block .activity-block--column p {
+  margin-top: 0;
+}
+
+.kartinyi-dlya-interera .activity-block .activity-block--column:nth-of-type(3) img {
+  margin-top: 0;
+}
+
+.kartinyi-dlya-interera .activity-block .activity-block--column .activity-block--icon {
+  width: 14.28571429%;
+}
+
+.kartinyi-dlya-interera .activity-block .activity-block--column .activity-block--info {
+  width: 71.42857143%;
+}
+
+.kartinyi-dlya-interera .copy-block-adv {
+  min-height: 480px;
+}
+
+.kartinyi-dlya-interera .form-order form .submit-form {
+  margin-top: 53px;
+}
+
+.kartinyi-dlya-interera .form-order form .file_upload .desc {
+  margin-top: 0;
+}
+
+.kartinyi-dlya-interera div.wpcf7 img.ajax-loader {
+  display: block;
+  margin: 10px auto 0;
+}
+
+/*-----------------------------------*/
+/*                 404               */
+/*-----------------------------------*/
+.page-404 {
+  text-align: center;
+  padding: 49px 0 200px;
+}
+
+.page-404 .page-404-img {
+  width: 385px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.page-404 .page-404-img img {
+  width: 100%;
+  height: auto;
+}
+
+.page-404 p {
+  font-size: 20px;
+  line-height: 1.200em;
+  margin: 10px 0;
+}
+
+.page-404 p a {
+  color: #333333;
+  border-bottom: 1px solid rgba(9, 8, 8, 0.5);
+}
+
+.page-404 p.phone {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.500em;
+  margin-top: 52px;
+}
+
+.page-404 .btn.btn-color {
+  font-size: 24px;
+  padding: 13px 64px;
 }

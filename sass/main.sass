@@ -1003,7 +1003,19 @@ div.pp_pic_holder
 		height: 400px
 		.about-block--title
 			font-size: 44px
+			margin-left: 0
+			position: relative
+			&:before
+				content: '«'
+				position: absolute
+				top: 0
+				left: -20px
+	.about-block--text
+		min-height: 400px
+		height: 400px
 	.about-block--photo
+		min-height: 400px
+		height: 400px
 		img
 			height: auto
 	.price-block
@@ -1085,7 +1097,9 @@ div.pp_pic_holder
 	.activity-block
 		padding: 46px 0
 		.activity-block--column
+			width: 28.57142857%
 			.activity-block--icon
+				width: 21.42857143%
 				img
 					max-height: 67px
 			&:nth-of-type(3)
@@ -1096,6 +1110,8 @@ div.pp_pic_holder
 			&:nth-of-type(4)
 				img
 					margin-top: 8px
+			.activity-block--info
+				width: 78.57142857%
 
 	.portfolio-pictures
 		padding: 60px 125px 120px
@@ -1137,11 +1153,16 @@ div.pp_pic_holder
 		h2
 			text-align: center
 	.copy-block-adv
-		background: #2a2f40 url(../img/bg_copy.jpg) 0 0 no-repeat
 		background-size: cover
 		overflow: hidden
-		padding-top: 68px
-		padding-bottom: 102px
+		min-height: 600px
+	.desc-block
+		padding: 27px 0
+		text-align: center
+		p
+			font-size: 18px
+			font-weight: bold
+			line-height: 1.333em
 
 	.form-order
 		margin-top: 128px
@@ -1150,11 +1171,17 @@ div.pp_pic_holder
 			padding: 39px 90px 0
 			p
 				margin: 0
+			.bold-info
+				font-weight: bold
+				font-size: 18px
+				line-height: 1.333em
+				text-align: center
+				margin-top: 35px
 			.submit-form
 				margin-left: -90px
 				margin-right: -90px
 				margin-top: 25px
-				padding: 40px 0 48px
+				padding: 40px 0 22px
 			label,
 			p.text
 				width: 33%
@@ -1167,6 +1194,12 @@ div.pp_pic_holder
 				width: 66%
 				margin-bottom: 0
 				margin-top: 26px
+			textarea::-webkit-input-placeholder,
+			textarea::-moz-placeholder,
+			textarea:-moz-placeholder,
+			textarea:-ms-input-placeholder
+				font-size: 18px
+				line-height: 1.333em
 			.decs
 				font-style: italic
 				font-size: 14px
@@ -1178,12 +1211,12 @@ div.pp_pic_holder
 				position: relative
 				overflow: hidden
 				font-size: 18px
-				margin-bottom: 15px
+				margin: 15px 0
 				margin-left: 34%
 			.file_upload > button
 				float: left
 				padding: 0
-				margin-bottom: 20px
+				margin-bottom: 5px
 				color: $mainBg
 				background-color: transparent
 				border: none
@@ -1198,6 +1231,11 @@ div.pp_pic_holder
 				font-size: 18px
 				display: inline-block
 				margin-left: 10px
+			.file_upload .desc
+				margin-top: 20px
+				font-size: 16px
+				margin-left: 0
+				font-style: italic
 			.file_upload input[type=file]
 				position: absolute
 				left: 0
@@ -1284,7 +1322,6 @@ div.pp_pic_holder
 					text-align: right
 					font-weight: bold
 					color: $mainBg
-
 	.vertical
 		height: 630px
 	.grid-item--md
@@ -1310,3 +1347,68 @@ div.pp_pic_holder
 		font-size: 18px
 	.price
 		font-weight: bold
+
+/*-----------------------------------*/
+/*         Картины для интерьера     */
+/*-----------------------------------*/
+.kartinyi-dlya-interera
+	.about-block
+		.about-block--text
+			padding: 19px 47px
+	.price-block
+		.title
+			display: inline-block
+	.activity-block
+		.activity-block--column
+			width: 42.85714286%
+			p
+				margin-top: 0
+			&:nth-of-type(3) img
+				margin-top: 0
+			.activity-block--icon
+				width: 14.28571429%
+			.activity-block--info
+				width: 71.42857143%
+	.copy-block-adv
+		min-height: 480px
+	.form-order
+		form
+			.submit-form
+				margin-top: 53px
+			.file_upload
+				.desc
+					margin-top: 0
+	div.wpcf7 img.ajax-loader
+		display: block
+		margin: 10px auto 0
+
+/*-----------------------------------*/
+/*                 404               */
+/*-----------------------------------*/
+.page-404
+	text-align: center
+	padding: 49px 0 200px
+	.page-404-img
+		width: 385px
+		margin: auto
+		margin-bottom: 40px
+		img
+			width: 100%
+			height: auto
+	p
+		font-size: 20px
+		line-height: 1.200em
+		margin: 10px 0
+		a
+			color: $colorFont
+			border-bottom: 1px solid rgba(9,8,8,0.5)
+		&.phone
+			font-size: 40px
+			font-weight: bold
+			line-height: 1.500em
+			margin-top: 52px
+	.btn.btn-color
+		font-size: 24px
+		padding: 13px 64px
+
+

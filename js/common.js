@@ -29,14 +29,23 @@ $(function() {
 	});
 
 	//Каруселька портфолио
+	$('.bxslider').bxSlider({
+		adaptiveHeight: false,
+		touchEnabled: false,
+		oneToOneTouch: false
+	});
+
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    margin:10,
 	    items:4,
 	    nav:true,
 	    navText: false,
-	    responsive: false
-	})
+	    responsive: false,
+	    mouseDrag: false,
+	    touchDrag: false
+
+	});
 
 	//Каруселька отзывы
 	$('.owl-carousel-review').owlCarousel({
@@ -45,7 +54,7 @@ $(function() {
 	    items:1,
 	    nav:true,
 	    navText: false
-	})
+	});
 
 
 	//Табы
@@ -375,6 +384,7 @@ $(function() {
 			$('.price-block .cost').html((totalCostQty * 1) + '<span class="rur">i</span>');
 		}
 	}
+
 });
 
 $(window).scroll(function() {

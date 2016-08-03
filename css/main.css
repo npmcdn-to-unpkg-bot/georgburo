@@ -1006,18 +1006,28 @@ span.rur {
   font-size: 14px;
 }
 
+.before-after-block {
+  padding: 70px 45px 30px;
+}
+
 .portfolio-block {
-  padding: 70px 45px;
+  padding: 30px 125px;
 }
 
-.portfolio-block .owl-carousel-portfolio .item {
-  height: 320px;
+.portfolio-block .portfolio-pictures-img {
+  width: 33.3%;
+  float: left;
+  padding: 0 5px;
+  margin-top: 10px;
+  height: 310px;
+  overflow: hidden;
 }
 
-.portfolio-block .owl-carousel-portfolio .item img {
+.portfolio-block .portfolio-pictures-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0 2px 5px 0 rgba(82, 82, 82, 0.7);
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -1486,12 +1496,13 @@ div.pp_pic_holder {
   position: relative;
   color: #fe9902;
   font-weight: bold;
+  font-weight-margin-right: 10px;
 }
 
 .copy-pictures .price-block .tabs__content .price-block--list li:before {
   display: block;
   left: 16px;
-  width: 44px;
+  width: 50px;
   height: 52px;
 }
 
@@ -1502,6 +1513,10 @@ div.pp_pic_holder {
 .copy-pictures .price-block .tabs__content .price-block--list li.price-block--icon-cost:before {
   background-position: -180px -75px;
   top: 7px;
+}
+
+.copy-pictures .price-block .tabs__content .price-block--list li.price-block--icon-size:before {
+  background-position: -239px -71px;
 }
 
 .copy-pictures .price-block .tabs__content .btn {
@@ -1733,12 +1748,16 @@ div.pp_pic_holder {
 /*             Портфолио             */
 /*-----------------------------------*/
 .portfolio-page {
-  text-align: center;
   padding: 27px 0 160px;
+}
+
+.portfolio-page {
+  text-align: center;
 }
 
 .portfolio-page .grid {
   margin-top: 49px;
+  margin: auto;
 }
 
 .portfolio-page .grid-item {

@@ -9,6 +9,8 @@
 
 /* owl-carousel */
 @import url("libs/owl.carousel/assets/owl.carousel.css");
+@import url("libs/image-comparison-slider/css/style.css");
+@import url("libs/bxslider/jquery.bxslider.css");
 
 /* main */
 @import url("css/main.css");

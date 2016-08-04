@@ -1423,3 +1423,81 @@ div.pp_pic_holder
 	.btn.btn-color
 		font-size: 24px
 		padding: 13px 64px
+
+
+/*-----------------------------------*/
+/*              Контакты             */
+/*-----------------------------------*/
+.contacts-page
+	padding: 15px 0 67px
+	.contact-column
+		text-align: center
+		ul
+			list-style: none
+			padding-left: 0
+			li
+				display: inline-block
+				vertical-align: top
+		.contact-list
+			margin-top: 41px
+			li
+				padding-left: 30px
+				padding-right: 40px
+				font-size: 20px
+				line-height: 1.2em
+				position: relative
+				a
+					color: #252525
+				&.phone
+					font-weight: bold
+					&:before
+						background-position: -85px -136px
+						width: 20px
+						height: 23px
+						top: 0
+						left: 0
+				&.mail
+					&:before
+						background-position: -115px -136px
+						width: 21px
+						height: 14px
+						top: 5px
+						left: 0
+					a
+						border-bottom: 1px solid #252525
+				&.adress
+					text-align: left
+					&:before
+						background-position: -147px -136px
+						width: 16px
+						height: 21px
+						top: -2px
+						left: 8px
+		.social-list
+			margin-bottom: 50px
+			li
+				padding-right: 15px
+				a
+					width: 47px
+					height: 47px
+					border-radius: 50%
+					text-align: center
+					line-height: 47px
+					font-size: 28px
+					color: #fff
+					display: inline-block
+					vertical-align: top
+					transition: $transition
+					&.vk
+						background-color: #537599
+					&.fb
+						background-color: #314f8d
+					&:hover,
+					&:active
+						background-color: $mainBg
+
+	.map-column
+		padding: 0 45px
+	#map
+		width: 100%
+		height: 600px

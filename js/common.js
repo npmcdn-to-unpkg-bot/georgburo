@@ -37,11 +37,9 @@ $(function() {
 
 	$('.bxslider-about').bxSlider({
 		pagerCustom: '#bx-pager',
-		// video: true,
 		responsive: false,
 		touchEnabled: false,
 		oneToOneTouch: false
-		// slideWidth: 755
 	});
 
 	$('.owl-carousel').owlCarousel({
@@ -152,17 +150,28 @@ $(function() {
 
 	//Портфолио
 	var $container = $('.grid');
-		$container.masonry({
-			itemSelector : '.grid-item',
-			columnWidth: 10,
-			isFitWidth: true,
-			isAnimated: !Modernizr.csstransitions,
-			animationOptions: {
-				duration: 750,
-				queue: false
-			}
-		});
+	$container.masonry({
+		itemSelector : '.grid-item',
+		columnWidth: 10,
+		isFitWidth: true,
+		isAnimated: !Modernizr.csstransitions,
+		animationOptions: {
+			duration: 750,
+			queue: false
+		}
+	});
 
+	//ставим на паузу видео при переключении слайдов
+	$('.bx-controls-direction a, .pager-link').on('click', function () {
+
+  		var $video = $('video');
+
+  		$(this).closest('.about-block--slider').find($video);
+
+  		for (var i = 0; i < $video.length; i++) {
+    		$video[i].pause();
+  		}
+	});
 
 
 	//при наведении на иконку преимуществ, подсвечиваем ссылку

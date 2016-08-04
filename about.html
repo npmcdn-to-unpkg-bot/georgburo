@@ -23,6 +23,7 @@
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="all-stylesheets.css">
 
@@ -97,17 +98,22 @@
 							</div>
 							<div class="col-xs-9 about-block--slider">
 								<ul class="bxslider-about">
-									<li><img src="img/pictures_1.jpg" /></li>
+									<li>
+										<video id="about-video" class="video-js" controls preload="auto" width="640" height="400"  poster="img/pictures_1.jpg" data-setup='{}'>
+    										<source src="img/Architect.mp4" type='video/mp4'>
+										</video>
+									</li>
+
 									<li><img src="img/master.jpg"/></li>
 									<li><img src="img/pictures_2.jpg" /></li>
 									<li><img src="img/master.jpg"/></li>
 								</ul>
 
 								<div id="bx-pager">
-									<a data-slide-index="0" href=""><img src="img/pictures_1.jpg" /></a>
-									<a data-slide-index="1" href=""><img src="img/master.jpg" /></a>
-									<a data-slide-index="2" href=""><img src="img/pictures_2.jpg" /></a>
-									<a data-slide-index="3" href=""><img src="img/master.jpg" /></a>
+									<a data-slide-index="0" class="pager-link" href=""><img src="img/pictures_1.jpg" /></a>
+									<a data-slide-index="1" class="pager-link" href=""><img src="img/master.jpg" /></a>
+									<a data-slide-index="2" class="pager-link" href=""><img src="img/pictures_2.jpg" /></a>
+									<a data-slide-index="3" class="pager-link" href=""><img src="img/master.jpg" /></a>
 								</div>
 							</div>
 						</div>
@@ -289,6 +295,7 @@
 	<script src="libs/masonry-docs/masonry.pkgd.min.js"></script>
 	<script src="libs/image-comparison-slider/js/main.js"></script>
 	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

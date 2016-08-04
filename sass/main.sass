@@ -438,10 +438,20 @@ section
 			height: auto
 
 .our-masters
-	padding-left: 40px
-	padding-right: 40px
+	.our-masters--row
+		text-align: center
 	.our-masters--column
 		text-align: center
+		display: inline-block
+		vertical-align: top
+		margin-left: auto
+		margin-right: auto
+		float: none
+		width: 28.57142857%
+		position: relative
+		min-height: 1px
+		padding-left: 15px
+		padding-right: 15px
 		.our-masters--photo
 			width: 230px
 			height: 230px
@@ -1266,7 +1276,6 @@ div.pp_pic_holder
 /*-----------------------------------*/
 .portfolio-page
 	padding: 27px 0 160px
-.portfolio-page
 	text-align: center
 	.grid
 		margin-top: 49px
@@ -1505,3 +1514,54 @@ div.pp_pic_holder
 /*-----------------------------------*/
 /*              О бюро               */
 /*-----------------------------------*/
+.about-page
+	.about-block-single-page
+		height: 465px
+		.about-block--text
+			min-height: 465px
+			.about-block--title
+				margin-left: 0
+			.btn
+				padding: 11px 20px
+				margin-top: 10px
+		.about-block--photo
+			height: 465px
+	.our-masters
+		padding: 60px 0 40px
+		h2
+			margin-bottom: 10px
+		p
+			font-size: 20px
+			line-height: 1.2em
+			color: #252525
+			text-align: center
+		.our-masters--row
+			margin-top: 25px
+		.our-masters--column p
+			font-size: 14px
+			line-height: 1.3em
+	.gift
+		padding: 60px 30px 46px
+		.gift-column
+			.gift-column--text
+				min-height: 107px
+			.gift-column--photo
+				height: 272px
+	.order .btn
+		padding: 15px 48px
+	.portfolio
+		@extend .portfolio-page
+		.grid-item--md
+			width: 629px
+		.grid-item--lg
+			width: 949px
+		padding: 45px 0 40px
+		.grid-item:hover
+			background: none
+			img
+				opacity: 1
+	.review
+		padding: 60px 0 190px
+		.review-column
+			padding-left: 35px
+			padding-right: 45px

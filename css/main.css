@@ -91,7 +91,7 @@ a, a:hover {
   color: #fe9902;
 }
 
-.img {
+.img, .about-page .about-block-single-page .about-block--slider #bx-pager a img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -2131,8 +2131,53 @@ div.pp_pic_holder {
   margin-top: 10px;
 }
 
-.about-page .about-block-single-page .about-block--photo {
+.about-page .about-block-single-page .about-block--slider {
   height: 465px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.about-page .about-block-single-page .about-block--slider .bxslider-about {
+  height: 400px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.about-page .about-block-single-page .about-block--slider .bx-wrapper {
+  height: 400px;
+  margin: 0;
+  width: 100%;
+}
+
+.about-page .about-block-single-page .about-block--slider .bx-wrapper .bx-viewport {
+  left: 0;
+  height: 400px !important;
+}
+
+.about-page .about-block-single-page .about-block--slider .bx-wrapper img {
+  width: 100%;
+}
+
+.about-page .about-block-single-page .about-block--slider #bx-pager {
+  height: 65px;
+  font-size: 0;
+}
+
+.about-page .about-block-single-page .about-block--slider #bx-pager a {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+}
+
+.about-page .about-block-single-page .about-block--slider #bx-pager a:hover {
+  background-color: rgba(254, 153, 2, 0.9);
+}
+
+.about-page .about-block-single-page .about-block--slider #bx-pager a:hover img {
+  opacity: 0.3;
 }
 
 .about-page .our-masters {

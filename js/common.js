@@ -35,6 +35,15 @@ $(function() {
 		oneToOneTouch: false
 	});
 
+	$('.bxslider-about').bxSlider({
+		pagerCustom: '#bx-pager',
+		// video: true,
+		responsive: false,
+		touchEnabled: false,
+		oneToOneTouch: false
+		// slideWidth: 755
+	});
+
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    margin:10,

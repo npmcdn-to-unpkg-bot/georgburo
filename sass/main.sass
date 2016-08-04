@@ -1524,8 +1524,39 @@ div.pp_pic_holder
 			.btn
 				padding: 11px 20px
 				margin-top: 10px
-		.about-block--photo
+		.about-block--slider
 			height: 465px
+			padding: 0
+			overflow: hidden
+			.bxslider-about
+				height: 400px
+				overflow: hidden
+				font-size: 0
+			.bx-wrapper
+				height: 400px
+				margin: 0
+				width: 100%
+				.bx-viewport
+					left: 0
+					height: 400px !important
+				img
+					width: 100%
+			#bx-pager
+				height: 65px
+				font-size: 0
+				a
+					display: inline-block
+					vertical-align: top
+					width: 25%
+					height: 100%
+					transition: $transition
+					&:hover
+						background-color: rgba(254,153,2,0.9)
+						img
+							opacity: 0.3
+					img
+						@extend .img
+
 	.our-masters
 		padding: 60px 0 40px
 		h2
